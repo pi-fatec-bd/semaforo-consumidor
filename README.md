@@ -10,36 +10,36 @@ Sprint 0  | Sprint 1 | Sprint 2 | Sprint 3
 --------- |--------- |--------- |--------- |
 [indisponível](link) |[indisponível](link) |[indisponível](link) |[indisponível](link) |
 
-
+## 3. Arquitetura do Projeto
 ![Arquitetura Macro](https://github.com/pi-fatec-bd/cadastro-mais/blob/master/Arquitetura%20Macro.png)
-## 3. Front-end
+## 3.1. Front-end
 
-### 3.1. View
+#### 3.1.1. View
 Camada única do front-end com nenhuma regra de negócio.
     
-## 4. Back-end
+### 3.2. Back-end
 
-### 4.1. REST Controller
+####  3.2.1. REST Controller
 Camada dos controllers seguindo o padrão REST
     
-### 4.2. Model
+####  3.2.2. Model
 Camada do Model concentrando as regras de negócio, DTOs, serviços e entidades.
     
-### 4.2.1. DTO
+#### 3.2.1. DTO
 Camada para transformação das entidades em modelos adaptados para o front-end.
     
-### 4.2.2. Service
+#### 3.2.2. Service
 Camada de regra de negócio que envolve duas ou mais entidades.
     
-### 4.2.3. Entity
+#### 3.2.3. Entity
 Camada refletindo as entidades do banco de dados, concentrando as regras de negócios referente as entidades e conexões com o banco de dados
     
-## 5. DB
+### 3.3 DB
 Banco de dados
 
-## 6. Backlog
+## 4. Backlog
 
-### Requisitos Funcionais (Story Cards)
+### 4.1. Requisitos Funcionais (Story Cards)
 
 **R01.** Como PF (pessoa física), o usuário pode se cadastrar no Cadastro Mais através da tela de cadastro;
 
@@ -81,7 +81,7 @@ Banco de dados
 
 **R20.** Como PF (pessoa física) ou PJ (pessoa jurídica), o usuário pode consultar uma base de dados de perguntas comuns ou base de conhecimento;
 
-### Requisitos não funcionais
+### 4.2. Requisitos não Funcionais
 
 **R21.** Linguagem programação (Stack) Java - Requisito Fatec;
 
@@ -108,9 +108,9 @@ Banco de dados
 **R32.** Ajuda e documentação do produto;
 
 
-## 7. Wireframe
+## 5. Wireframe
 
-## 8. Equipe
+## 6. Equipe
 
 * André Luiz Dias Custódio - [linkedIn](link)
 
