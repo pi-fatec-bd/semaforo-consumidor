@@ -1,31 +1,43 @@
-# cadastro-mais
-![Arquitetura Macro](https://github.com/pi-fatec-bd/cadastro-mais/blob/master/Arquitetura%20Macro.png)
-## 1. Front-end
+# Cadastro Mais
 
-### 1.1. View
+## 1. Apresentação do Projeto
+
+### 1.1 Visão do Projeto
+
+## 2. Apresentação da Evolução do Projeto
+
+Sprint 0  | Sprint 1 | Sprint 2 | Sprint 3  
+--------- |--------- |--------- |--------- |
+[indisponível](link) |[indisponível](link) |[indisponível](link) |[indisponível](link) |
+
+
+![Arquitetura Macro](https://github.com/pi-fatec-bd/cadastro-mais/blob/master/Arquitetura%20Macro.png)
+## 3. Front-end
+
+### 3.1. View
 Camada única do front-end com nenhuma regra de negócio.
     
-## 2. Back-end
+## 4. Back-end
 
-### 2.1. REST Controller
+### 4.1. REST Controller
 Camada dos controllers seguindo o padrão REST
     
-### 2.2. Model
+### 4.2. Model
 Camada do Model concentrando as regras de negócio, DTOs, serviços e entidades.
     
-### 2.2.1. DTO
+### 4.2.1. DTO
 Camada para transformação das entidades em modelos adaptados para o front-end.
     
-### 2.2.2. Service
+### 4.2.2. Service
 Camada de regra de negócio que envolve duas ou mais entidades.
     
-### 2.2.3. Entity
+### 4.2.3. Entity
 Camada refletindo as entidades do banco de dados, concentrando as regras de negócios referente as entidades e conexões com o banco de dados
     
-## 3. DB
+## 5. DB
 Banco de dados
 
-## 4. Backlog
+## 6. Backlog
 
 ### Requisitos Funcionais (Story Cards)
 
@@ -94,3 +106,16 @@ Banco de dados
 **R31.** Prevenção de erros;
 
 **R32.** Ajuda e documentação do produto;
+
+
+## 7. Wireframe
+
+## 8. Equipe
+
+* André Luiz Dias Custódio - [linkedIn](link)
+
+* André Lars da Cunha - [linkedIn](link)
+
+* Dalwesley Ferreira Duarte - [linkedIn](link)
+
+* Felipe Gustavo Braga - [linkedIn](https://www.linkedin.com/in/felipegbraga/)
