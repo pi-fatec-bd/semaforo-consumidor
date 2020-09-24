@@ -12,7 +12,7 @@ Sprint 0  | Sprint 1 | Sprint 2 | Sprint 3
 
 ## 3. Arquitetura do Projeto
 ![Arquitetura Macro](https://github.com/pi-fatec-bd/cadastro-mais/blob/master/Arquitetura%20Macro.png)
-## 3.1. Front-end
+### 3.1. Front-end
 
 #### 3.1.1. View
 Camada única do front-end com nenhuma regra de negócio.
