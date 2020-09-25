@@ -16,24 +16,24 @@ Sprint 0  | Sprint 1 | Sprint 2 | Sprint 3
 
 #### 3.1.1. View
 Camada única do front-end com nenhuma regra de negócio.
-    
+
 ### 3.2. Back-end
 
 ####  3.2.1. REST Controller
 Camada dos controllers seguindo o padrão REST
-    
+
 ####  3.2.2. Model
 Camada do Model concentrando as regras de negócio, DTOs, serviços e entidades.
-    
+
 #### 3.2.1. DTO
 Camada para transformação das entidades em modelos adaptados para o front-end.
-    
+
 #### 3.2.2. Service
 Camada de regra de negócio que envolve duas ou mais entidades.
-    
+
 #### 3.2.3. Entity
 Camada refletindo as entidades do banco de dados, concentrando as regras de negócios referente as entidades e conexões com o banco de dados
-    
+
 ### 3.3 DB
 Banco de dados
 
@@ -109,13 +109,58 @@ Banco de dados
 
 
 ## 5. Wireframe
+Aqui temos o Wireframe incial do projeto. Wireframe é um protótipo usado em design de interface para sugerir a estrutura de uma aplicação ou site. Aqui, estão os designs inciais das telas de login, sign up, perfil do usário e adição de dados do próprio usuário.
+
+### 5.1. Tela de login
+Tela inicial da aplicação para o usuário realizar o login. Caso não possua conta, há um link que o redireciona para a criação de conta.
+<p align="center"> Versão desktop </p>
+<p align="center">
+  <img src="media/login/web.png" alt="Logo" width=50% height=50%>
+</p>
+<p align="center"> Versão Mobile </p>
+<p align="center">
+  <img src="media/login/phone.png" alt="Logo" width=50% height=50%>
+</p>
+
+### 5.2. Tela de criação de usuário
+Nesta tela o usuário fornece alguns dados para validação e criação de conta.
+<p align="center"> Versão desktop </p>
+<p align="center">
+  <img src="media/singup/web.png" alt="Logo" width=50% height=50%>
+</p>
+<p align="center"> Versão Mobile </p>
+<p align="center">
+  <img src="media/singup/phone.png" alt="Logo" width=50% height=50%>
+</p>
+
+### 5.3. Tela do perfil do usuário
+Nesta tela o usuário pode ver detalhes de sua conta. O item principal é o score com os motivos da nota e um CTA para dicas de como aumentar seu score, seja fornecendo dados para a análise ou de outras maneiras.
+<p align="center"> Versão desktop </p>
+<p align="center">
+  <img src="media/user/window.png" alt="Logo" width=50% height=50%>
+</p>
+<p align="center"> Versão Mobile </p>
+<p align="center">
+  <img src="media/user/phone.png" alt="Logo" width=50% height=50%>
+</p>
+
+### 5.4. Tela para usuário informar novos dados
+Nesta tela o usuário atualiza sua conta, informando dados não obrigatórios, mas que auxiliam no cálculo do score e para mapeamento dos usuários por região, renda e etc.
+<p align="center"> Versão desktop </p>
+<p align="center">
+  <img src="media/userdata/web.png" alt="Logo" width=50% height=50%>
+</p>
+<p align="center"> Versão Mobile </p>
+<p align="center">
+  <img src="media/userdata/phone.png" alt="Logo" width=50% height=50%>
+</p>
 
 ## 6. Equipe
 
-* André Luiz Dias Custódio - [linkedIn](link)
+* André Luiz Dias Custódio - [linkedIn](https://www.linkedin.com/in/andr%C3%A9-luiz-d-146213a7/)
 
-* André Lars da Cunha - [linkedIn](link)
+* André Lars da Cunha - [linkedIn](https://www.linkedin.com/in/andre-lars-da-cunha/)
 
-* Dalwesley Ferreira Duarte - [linkedIn](link)
+* Dalwesley Ferreira Duarte - [linkedIn](https://www.linkedin.com/in/dalwesley-duarte/)
 
 * Felipe Gustavo Braga - [linkedIn](https://www.linkedin.com/in/felipegbraga/)
