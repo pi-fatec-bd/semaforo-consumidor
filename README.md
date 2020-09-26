@@ -3,6 +3,10 @@
 ## 1. Apresentação do Projeto
 
 ### 1.1 Visão do Projeto
+O sistema do Cadastro Mais vem para solucionar o problema de crédito, 
+tanto para tomadores quanto para os provedores!
+Nossa AI analisa o hábito de consumo e sugere, baseado em uma pontuação de 0 a 999, a possibilidade de conceder crédito!
+O Cadastro Mais ao contrário de outros sistemas, trabalha tanto para reduzir a inadimplência, dando mais segurança para quem vende com nosso sistema de score; tanto para aumentar o consumo e empoderar o consumidor com nossos programas de recuperação de crédito e incentivos ao consumo consciente.
 
 ## 2. Apresentação da Evolução do Projeto
 
