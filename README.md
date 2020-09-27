@@ -119,11 +119,11 @@ Aqui temos o Wireframe incial do projeto. Wireframe é um protótipo usado em de
 Tela inicial da aplicação para o usuário realizar o login. Caso não possua conta, há um link que o redireciona para a criação de conta.
 <p align="center"> Versão desktop </p>
 <p align="center">
-  <img src="media/login/web.png" alt="Logo" width=50% height=50%>
+  <img src="https://github.com/pi-fatec-bd/cadastro-mais/blob/master/media/login/web.png" alt="Logo" width=50% height=50%>
 </p>
 <p align="center"> Versão Mobile </p>
 <p align="center">
-  <img src="media/login/phone.png" alt="Logo" width=50% height=50%>
+  <img src="https://github.com/pi-fatec-bd/cadastro-mais/blob/master/media/login/phone.png" alt="Logo" width=50% height=50%>
 </p>
 
 ### 5.2. Tela de criação de usuário
