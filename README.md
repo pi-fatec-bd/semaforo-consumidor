@@ -130,33 +130,33 @@ Tela inicial da aplicação para o usuário realizar o login. Caso não possua c
 Nesta tela o usuário fornece alguns dados para validação e criação de conta.
 <p align="center"> Versão desktop </p>
 <p align="center">
-  <img src="media/singup/web.png" alt="Logo" width=50% height=50%>
+  <img src="https://github.com/pi-fatec-bd/cadastro-mais/blob/master/media/signUp/web.png" alt="Logo" width=50% height=50%>
 </p>
 <p align="center"> Versão Mobile </p>
 <p align="center">
-  <img src="media/singup/phone.png" alt="Logo" width=50% height=50%>
+  <img src="https://github.com/pi-fatec-bd/cadastro-mais/blob/master/media/signup/phone.png" alt="Logo" width=50% height=50%>
 </p>
 
 ### 5.3. Tela do perfil do usuário
 Nesta tela o usuário pode ver detalhes de sua conta. O item principal é o score com os motivos da nota e um CTA para dicas de como aumentar seu score, seja fornecendo dados para a análise ou de outras maneiras.
 <p align="center"> Versão desktop </p>
 <p align="center">
-  <img src="media/user/window.png" alt="Logo" width=50% height=50%>
+  <img src="https://github.com/pi-fatec-bd/cadastro-mais/blob/master/media/user/window.png" alt="Logo" width=50% height=50%>
 </p>
 <p align="center"> Versão Mobile </p>
 <p align="center">
-  <img src="media/user/phone.png" alt="Logo" width=50% height=50%>
+  <img src="https://github.com/pi-fatec-bd/cadastro-mais/blob/master/media/user/phone.png" alt="Logo" width=50% height=50%>
 </p>
 
 ### 5.4. Tela para usuário informar novos dados
 Nesta tela o usuário atualiza sua conta, informando dados não obrigatórios, mas que auxiliam no cálculo do score e para mapeamento dos usuários por região, renda e etc.
 <p align="center"> Versão desktop </p>
 <p align="center">
-  <img src="media/userdata/web.png" alt="Logo" width=50% height=50%>
+  <img src="https://github.com/pi-fatec-bd/cadastro-mais/blob/master/media/userdata/web.png" alt="Logo" width=50% height=50%>
 </p>
 <p align="center"> Versão Mobile </p>
 <p align="center">
-  <img src="media/userdata/phone.png" alt="Logo" width=50% height=50%>
+  <img src="https://github.com/pi-fatec-bd/cadastro-mais/blob/master/media/userdata/phone.png" alt="Logo" width=50% height=50%>
 </p>
 
 ## 6. Equipe
