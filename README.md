@@ -88,6 +88,8 @@ R14. Como PF (pessoa física), o usuário com score médio/alto receberá dicas 
 
 R20. Como PF (pessoa física) ou PJ (pessoa jurídica), o usuário pode consultar uma base de dados de perguntas comuns ou base de conhecimento;
 
+R33. Como PF (pessoa física), o usuário pode renegociar suas dívidas que constam no cadastro positivo;
+
 ### 3.2. Requisitos não Funcionais
 R21. Linguagem programação (Stack) Java - Requisito Fatec;
 
