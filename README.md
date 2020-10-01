@@ -228,8 +228,12 @@ Nesta tela o usuário atualiza sua conta, informando dados não obrigatórios, m
 <p align="center">
   <img src="./media/userdata/phone.png" alt="Logo" width=50% height=50%>
 </p>
+## 5. Modelagem do Banco de Dados
+<p align="center">
+  <img src="./media/uml.png" alt="uml" width=50% height=50%>
+</p>
 
-## 5. Equipe
+## 6. Equipe
 
 * André Luiz Dias Custódio - [linkedIn](https://www.linkedin.com/in/andr%C3%A9-luiz-d-146213a7/)
 
