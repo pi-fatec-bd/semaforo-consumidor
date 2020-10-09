@@ -1,7 +1,7 @@
 $( "#criar_usuario" ).click(function() {
     var dados = {
         cpf: document.getElementById("cpf").value,
-        ano_nascimento : document.getElementById("ano_nascimento").value,
+        anoNascimento : document.getElementById("anoNascimento").value,
         cidade: document.getElementById("cidade").value,
         uf: document.getElementById("uf").value,
         sexo: $("input:radio[name=sexo]:checked").val(),
