@@ -22,7 +22,7 @@
                     <label for="cpf">CPF (000.000.000-00)</label>
                 </div>
                 <div class="input-field col l6 s12">
-                    <input id="ano_nascimento" type="text" class="validate" data-mask="0000">
+                    <input id="anoNascimento" type="text" class="validate" data-mask="0000">
                     <label for="anoNascimento">Ano de Nascimento (0000)</label>
                 </div>
             </div>
@@ -43,7 +43,7 @@
                 </div>
                 <div class="input-field col l6 s12">
                     <input id="confirmarSenha" type="password" class="validate">
-                    <label for="confirmar senha">Confirme sua senha</label>
+                    <label for="confirmarSenha">Confirme sua senha</label>
                 </div>
             </div>
             <div class="row">
@@ -52,19 +52,19 @@
                 </p>
                 <p>
                     <label>
-                        <input id="fem" name="sexo" type="radio" value="feminino" checked />
+                        <input id="fem" name="sexo" type="radio" value="f" checked />
                         <span>Feminino</span>
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input id="mal" name="sexo" type="radio" value="masculino" />
+                        <input id="mal" name="sexo" type="radio" value="m" />
                         <span>Masculino</span>
                     </label>
                 </p>
             </div>
             <div class="center">
-                <button class="btn waves-effect waves-light" id="criar_usuario" type="submit" name="action">Cadastrar
+                <button class="btn waves-effect waves-light" id="criarUsuario" type="submit" name="action">Cadastrar
                     <i class="material-icons right">send</i>
                 </button>
             </div>
@@ -78,6 +78,6 @@
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.min.js" ></script>
     <script src="js/materialize.min.js"></script>
-    <script src="js/create_user.js"></script>
+    <script src="js/cadastro.js"></script>
 </body>
 </html>
