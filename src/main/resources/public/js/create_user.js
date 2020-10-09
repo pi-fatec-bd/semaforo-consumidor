@@ -5,8 +5,8 @@ $( "#criar_usuario" ).click(function() {
         cidade: document.getElementById("cidade").value,
         uf: document.getElementById("uf").value,
         sexo: $("input:radio[name=sexo]:checked").val(),
-        senha: document.getElementById("senha").value,
-        confirmar_senha: document.getElementById("confirmar_senha").value,
+        senha: "des",
+        confirmarSenha: "des"
     }
     
     $.post("https://my-json-server.typicode.com/felipemessi/fakeapi-jsonplaceholder/pessoa_fisica?" + $.param(dados), function() {
