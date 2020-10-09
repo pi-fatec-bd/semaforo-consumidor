@@ -18,16 +18,17 @@ $( "#criarUsuario" ).click(function() {
   
     $.post("http://localhost:4567/api/v1/PessoaFisica?" + $.param(dados), function() {
         alert( "enviando..." );
-        })
-        .done(function() {
-          alert( "Cadastrado com sucesso!" );
-        })
-        .fail(function() {
-          alert( "Algum erro ocorreu, tente novamente mais tarde" );
-        })
-        .always(function() {
-          alert( "Você será redirecionado para a próxima página." );
-        });
+    })
+    .done(function() {
+        alert( "Cadastrado com sucesso!" )
+        window.location.href = "http://localhost:4567"
+    })
+    .fail(function() {
+        alert( "Algum erro ocorreu, tente novamente mais tarde" );
+    })
+    .always(function() {
+        alert( "Você será redirecionado para a próxima página." );
+    });
 })
 
 // $( "#listarCadastros" ).click(function() {
