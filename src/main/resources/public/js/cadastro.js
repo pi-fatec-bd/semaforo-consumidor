@@ -9,7 +9,7 @@ $( "#criar_usuario" ).click(function() {
         confirmarSenha: "des"
     }
     
-    $.post("https://my-json-server.typicode.com/felipemessi/fakeapi-jsonplaceholder/pessoa_fisica?" + $.param(dados), function() {
+    $.post("http://localhost:4567/api/v1/PessoaFisica?" + $.param(dados), function() {
         alert( "enviando..." );
       })
         .done(function() {
