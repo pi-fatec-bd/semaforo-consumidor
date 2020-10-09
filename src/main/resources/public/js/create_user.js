@@ -6,23 +6,20 @@ $( "#criar_usuario" ).click(function() {
         uf: document.getElementById("uf").value,
         sexo: $("input:radio[name=sexo]:checked").val()
     }
-    $.ajax
-    ({
-        //o objeto json que será passado pela requisição
-        data : JSON.stringify(dados),
-        contentType : 'application/json',
-        type : 'POST',
-        //a url que vai receber a requisição
-        url: 'https://my-json-server.typicode.com/felipemessi/fakeapi-jsonplaceholder/pessoa_fisica?" + $.param(data)',
-        dataType: 'json',
-        async: true,
-        
-        success: function () {
-            alert("Cadastrado com sucesso!!!"); 
-        }
+    
+    $.post("https://my-json-server.typicode.com/felipemessi/fakeapi-jsonplaceholder/pessoa_fisica?" + $.param(dados), function() {
+        alert( "enviando..." );
+      })
+        .done(function() {
+          alert( "Cadastrado com sucesso!" );
+        })
+        .fail(function() {
+          alert( "Algum erro ocorreu, tente novamente mais tarde" );
+        })
+        .always(function() {
+          alert( "Você será redirecionado para a próxima página." );
+        });
     })
-    alert("Cadastrado com sucesso!!!"); 
-})
 
 // $( "#listar_cadastros" ).click(function() {
 //     // $.get("http://localhost:3333/create-user", function(resultado){
