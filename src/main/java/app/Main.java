@@ -1,6 +1,7 @@
 package app;
 
-import app.controllers.CadastroController;
+import app.controllers.PostCadastroUsuarioPessoaFisicaController;
+import app.controllers.PutUsuarioPessoaFisicaController;
 
 import static spark.Spark.*;
 
@@ -13,8 +14,10 @@ public class Main {
         String projectDir = System.getProperty("user.dir");
         String staticDir = "/src/main/resources/public";
         staticFiles.externalLocation(projectDir + staticDir);
-        CadastroController cadastroController = new CadastroController();
+        PostCadastroUsuarioPessoaFisicaController postCadastroUsuarioPessoaFisicaController = new PostCadastroUsuarioPessoaFisicaController();
+        PutUsuarioPessoaFisicaController putUsuarioPessoaFisicaController = new PutUsuarioPessoaFisicaController();
         get("/", (req, res) -> "" );
-        post("/api/v1/PessoaFisica", cadastroController.cadastroPessoaFisica);
+        post("/api/v1/UsuarioPessoaFisica", postCadastroUsuarioPessoaFisicaController.cadastroPessoaFisica);
+        put("/api/v1/UsuarioPessoaFisica", putUsuarioPessoaFisicaController.putUsuarioPessoaFisica);
     }
 }

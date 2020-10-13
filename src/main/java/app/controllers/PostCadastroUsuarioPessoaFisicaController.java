@@ -12,13 +12,13 @@ import java.util.logging.Logger;
 
 import static app.utils.JsonToPOJO.toMap;
 
-public class CadastroController {
+public class PostCadastroUsuarioPessoaFisicaController {
 
     private static final String MENSAGEM_SENHAS_DIFERENTES = "Senhas Diferentes";
     private static final String MENSAGEM_CADASTRO_SUCESSO = "Cadastro Realizado Com Sucesso!";
     private static final String MENSAGEM_ERRO_CADASTRO = "Não Foi Possível Realizar o Cadastro";
     private static final String MENSAGEM_CPF_NAO_ENCONTRADO = "CPF Não Encontrado";
-    private static final Logger LOGGER = Logger.getLogger(CadastroController.class.getName());
+    private static final Logger LOGGER = Logger.getLogger(PostCadastroUsuarioPessoaFisicaController.class.getName());
     private final PessoaFisicaRepository pessoaFisicaRepository = new PessoaFisicaRepository();
     private final UsuarioPessoaFisicaRepository usuarioPessoaFisicaRepository = new UsuarioPessoaFisicaRepository();
 

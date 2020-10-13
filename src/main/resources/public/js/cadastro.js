@@ -9,7 +9,7 @@ $("#cadastro").submit(function(event) {
         confirmarSenha: $("#confirmarSenha").val()
     }
     
-    $.post("http://localhost:4567/api/v1/PessoaFisica", novoUsuario, function(data) {
+    $.post("http://localhost:4567/api/v1/UsuarioPessoaFisica", novoUsuario, function(data) {
         alert(data);
     })
 });
