@@ -15,11 +15,11 @@
     </div>
     <section class="container">
         <div class="row">
-            <form class="offset-">
+            <form id="cadastro" class="offset-">
                 <div class="row">
                     <div class="input-field col l6 s12">
-                        <input id="cpf" type="text" class="validate" data-mask="000.000.000-00">
-                        <label for="cpf">CPF (000.000.000-00)</label>
+                        <input id="cpf" type="text" class="validate" data-mask="00000000000">
+                        <label for="cpf">CPF (00000000000)</label>
                     </div>
                     <div class="input-field col l6 s12">
                         <input id="anoNascimento" type="text" class="validate" data-mask="0000">
@@ -32,8 +32,8 @@
                         <label for="cidade">Cidade</label>
                     </div>
                     <div class="input-field col l6 s12">
-                        <input id="uf" type="text" class="validate">
-                        <label for="uf">UF</label>
+                        <input id="estado" type="text" class="validate">
+                        <label for="estado">Estado</label>
                     </div>
                 </div>
                 <div class="row">
@@ -52,13 +52,13 @@
                     </p>
                     <p>
                         <label>
-                            <input id="fem" name="sexo" type="radio" value="feminino" checked />
+                            <input id="fem" name="sexo" type="radio" value="F" checked />
                             <span>Feminino</span>
                         </label>
                     </p>
                     <p>
                         <label>
-                            <input id="mal" name="sexo" type="radio" value="masculino" />
+                            <input id="mal" name="sexo" type="radio" value="M" />
                             <span>Masculino</span>
                         </label>
                     </p>
