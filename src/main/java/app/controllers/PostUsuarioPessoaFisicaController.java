@@ -1,6 +1,6 @@
 package app.controllers;
 
-import app.models.dtos.CadastroPessoaFisica;
+import app.models.dtos.PostUsuarioPessoaFisica;
 import app.models.repository.PessoaFisicaRepository;
 import app.models.repository.UsuarioPessoaFisicaRepository;
 import spark.Request;
@@ -12,19 +12,19 @@ import java.util.logging.Logger;
 
 import static app.utils.JsonToPOJO.toMap;
 
-public class PostCadastroUsuarioPessoaFisicaController {
+public class PostUsuarioPessoaFisicaController {
 
     private static final String MENSAGEM_SENHAS_DIFERENTES = "Senhas Diferentes";
     private static final String MENSAGEM_CADASTRO_SUCESSO = "Cadastro Realizado Com Sucesso!";
     private static final String MENSAGEM_ERRO_CADASTRO = "Não Foi Possível Realizar o Cadastro";
     private static final String MENSAGEM_CPF_NAO_ENCONTRADO = "CPF Não Encontrado";
-    private static final Logger LOGGER = Logger.getLogger(PostCadastroUsuarioPessoaFisicaController.class.getName());
+    private static final Logger LOGGER = Logger.getLogger(PostUsuarioPessoaFisicaController.class.getName());
     private final PessoaFisicaRepository pessoaFisicaRepository = new PessoaFisicaRepository();
     private final UsuarioPessoaFisicaRepository usuarioPessoaFisicaRepository = new UsuarioPessoaFisicaRepository();
 
     public final Route cadastroPessoaFisica = (Request request, Response response) -> {
 
-        CadastroPessoaFisica novoCadastro = new CadastroPessoaFisica(toMap(request));
+        PostUsuarioPessoaFisica novoCadastro = new PostUsuarioPessoaFisica(toMap(request));
 
         if(!novoCadastro.getSenha().equals(novoCadastro.getConfirmarSenha())) {
             response.status(400);

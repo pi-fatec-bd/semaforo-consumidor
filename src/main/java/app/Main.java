@@ -1,6 +1,7 @@
 package app;
 
-import app.controllers.PostCadastroUsuarioPessoaFisicaController;
+import app.controllers.DeleteUsuarioPessoaFisicaController;
+import app.controllers.PostUsuarioPessoaFisicaController;
 import app.controllers.PutUsuarioPessoaFisicaController;
 
 import static spark.Spark.*;
@@ -10,14 +11,20 @@ public class Main {
     public static final String ORACLE_USER_PASSWORD = "admin";
     public static final String ORACLE_URL = "jdbc:oracle:thin:@localhost:1521:xe";
 
+    private static final String URI_USUARIO_PESSOA_FISICA = "/api/v1/UsuarioPessoaFisica";
+
     public static void main(String[] args) {
         String projectDir = System.getProperty("user.dir");
         String staticDir = "/src/main/resources/public";
         staticFiles.externalLocation(projectDir + staticDir);
-        PostCadastroUsuarioPessoaFisicaController postCadastroUsuarioPessoaFisicaController = new PostCadastroUsuarioPessoaFisicaController();
+
+        PostUsuarioPessoaFisicaController postUsuarioPessoaFisicaController = new PostUsuarioPessoaFisicaController();
         PutUsuarioPessoaFisicaController putUsuarioPessoaFisicaController = new PutUsuarioPessoaFisicaController();
+        DeleteUsuarioPessoaFisicaController deleteUsuarioPessoaFisicaController = new DeleteUsuarioPessoaFisicaController();
+
         get("/", (req, res) -> "" );
-        post("/api/v1/UsuarioPessoaFisica", postCadastroUsuarioPessoaFisicaController.cadastroPessoaFisica);
-        put("/api/v1/UsuarioPessoaFisica", putUsuarioPessoaFisicaController.putUsuarioPessoaFisica);
+        post(URI_USUARIO_PESSOA_FISICA, postUsuarioPessoaFisicaController.cadastroPessoaFisica);
+        put(URI_USUARIO_PESSOA_FISICA, putUsuarioPessoaFisicaController.putUsuarioPessoaFisica);
+        delete(URI_USUARIO_PESSOA_FISICA, deleteUsuarioPessoaFisicaController.deleteUsuarioPessoaFisica);
     }
 }
