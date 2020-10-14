@@ -2,15 +2,39 @@ package app.models.repository;
 
 import app.models.dtos.PostUsuarioPessoaFisica;
 import app.models.dtos.PutUsuarioPessoaFisica;
+import app.models.entities.UsuarioPessoaFisica;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import static app.Main.*;
 import static java.sql.DriverManager.getConnection;
 
 public class UsuarioPessoaFisicaRepository {
+
+    public UsuarioPessoaFisica selectUsuarioPessoaFisica(String cpf) throws SQLException {
+        String selectString = "SELECT * FROM USUARIO_PESSOA_FISICA WHERE UPF_DOC_CLI = ?";
+        ResultSet resultSet;
+        UsuarioPessoaFisica usuarioPessoaFisica = null;
+        try (Connection con = getConnection(ORACLE_URL, ORACLE_USER, ORACLE_USER_PASSWORD);
+             PreparedStatement updateStatement = con.prepareStatement(selectString)) {
+            updateStatement.setString(1, cpf);
+            resultSet = updateStatement.executeQuery();
+            if(resultSet.next()) {
+                usuarioPessoaFisica = new UsuarioPessoaFisica(
+                    resultSet.getString(1),
+                    resultSet.getString(2),
+                    resultSet.getInt(3),
+                    resultSet.getString(4),
+                    resultSet.getString(5),
+                    resultSet.getString(6)
+                );
+            }
+        }
+        return usuarioPessoaFisica;
+    }
 
     public void insertUsuarioPessoaFisica(PostUsuarioPessoaFisica novoCadastro) throws SQLException {
         String insertString = "INSERT INTO USUARIO_PESSOA_FISICA (UPF_DOC_CLI, UPF_IDC_SEXO, UPF_ANO_DAT_NASCIMENTO," +
@@ -27,7 +51,7 @@ public class UsuarioPessoaFisicaRepository {
         }
     }
 
-    public void putUsuarioPessoaFisica(PutUsuarioPessoaFisica usuarioPessoaFisica) throws SQLException {
+    public void updateUsuarioPessoaFisica(PutUsuarioPessoaFisica usuarioPessoaFisica) throws SQLException {
         String updateString = "UPDATE USUARIO_PESSOA_FISICA SET UPF_DOC_CLI = ?, UPF_IDC_SEXO = ?, " +
                 "UPF_ANO_DAT_NASCIMENTO = ?, UPF_NOM_CIDADE = ?, UPF_DES_ESTADO = ?, UPF_PF_SENHA = ? " +
                 "WHERE UPF_DOC_CLI = ?";

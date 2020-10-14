@@ -1,6 +1,7 @@
 package app;
 
 import app.controllers.DeleteUsuarioPessoaFisicaController;
+import app.controllers.GetUsuarioPessoaFisicaController;
 import app.controllers.PostUsuarioPessoaFisicaController;
 import app.controllers.PutUsuarioPessoaFisicaController;
 
@@ -21,10 +22,12 @@ public class Main {
         PostUsuarioPessoaFisicaController postUsuarioPessoaFisicaController = new PostUsuarioPessoaFisicaController();
         PutUsuarioPessoaFisicaController putUsuarioPessoaFisicaController = new PutUsuarioPessoaFisicaController();
         DeleteUsuarioPessoaFisicaController deleteUsuarioPessoaFisicaController = new DeleteUsuarioPessoaFisicaController();
+        GetUsuarioPessoaFisicaController getUsuarioPessoaFisicaController = new GetUsuarioPessoaFisicaController();
 
         get("/", (req, res) -> "" );
+        get(URI_USUARIO_PESSOA_FISICA + "/:cpf", getUsuarioPessoaFisicaController.getUsuarioPessoaFisica);
         post(URI_USUARIO_PESSOA_FISICA, postUsuarioPessoaFisicaController.cadastroPessoaFisica);
         put(URI_USUARIO_PESSOA_FISICA, putUsuarioPessoaFisicaController.putUsuarioPessoaFisica);
-        delete(URI_USUARIO_PESSOA_FISICA, deleteUsuarioPessoaFisicaController.deleteUsuarioPessoaFisica);
+        delete(URI_USUARIO_PESSOA_FISICA + "/:cpf", deleteUsuarioPessoaFisicaController.deleteUsuarioPessoaFisica);
     }
 }

@@ -14,18 +14,27 @@ import static app.utils.JsonToPOJO.toMap;
 public class PutUsuarioPessoaFisicaController {
     private static final Logger LOGGER = Logger.getLogger(PutUsuarioPessoaFisicaController.class.getName());
     private static final String MENSAGEM_ERRO_UPDATE = "Não Foi Possível Realizar a Edição";
+    private static final String MENSAGEM_SUCESSO_UPDATE = "Edição Realizada com Sucesso";
+    private static final String MENSAGEM_SENHA_INCORRETA = "Senha Incorreta";
 
-    private UsuarioPessoaFisicaRepository usuarioPessoaFisicaRepository = new UsuarioPessoaFisicaRepository();
+    private final UsuarioPessoaFisicaRepository usuarioPessoaFisicaRepository = new UsuarioPessoaFisicaRepository();
 
     public final Route putUsuarioPessoaFisica = (Request request, Response response) -> {
         PutUsuarioPessoaFisica usuarioPessoaFisica = new PutUsuarioPessoaFisica(toMap(request));
-        try {
-            usuarioPessoaFisicaRepository.putUsuarioPessoaFisica(usuarioPessoaFisica);
-            response.status(204);
-        } catch (Exception e) {
-            LOGGER.log(Level.INFO, e.getMessage());
-            response.status(500);
-            response.body(MENSAGEM_ERRO_UPDATE);
+        if(usuarioPessoaFisicaRepository.selectUsuarioPessoaFisica(usuarioPessoaFisica.getCpf()).getSenha()
+                .equals(usuarioPessoaFisica.getSenhaAntiga())) {
+            try {
+                usuarioPessoaFisicaRepository.updateUsuarioPessoaFisica(usuarioPessoaFisica);
+                response.status(204);
+                response.body(MENSAGEM_SUCESSO_UPDATE);
+            } catch (Exception e) {
+                LOGGER.log(Level.INFO, e.getMessage());
+                response.status(500);
+                response.body(MENSAGEM_ERRO_UPDATE);
+            }
+        } else {
+            response.status(400);
+            response.body(MENSAGEM_SENHA_INCORRETA);
         }
         return response.body();
     };

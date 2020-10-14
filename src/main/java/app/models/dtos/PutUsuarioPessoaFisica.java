@@ -1,6 +1,7 @@
 package app.models.dtos;
 
 import lombok.Getter;
+import org.apache.commons.codec.digest.DigestUtils;
 
 import java.util.Map;
 
@@ -21,8 +22,8 @@ public class PutUsuarioPessoaFisica {
         this.sexo = params.get("sexo");
         this.cidade = params.get("cidade");
         this.estado = params.get("estado");
-        this.senhaAntiga = params.get("senhaAntiga");
-        this.senhaNova = params.get("senhaNova");
-        this.confirmarSenhaNova = params.get("confirmarSenhaNova");
+        this.senhaAntiga = DigestUtils.md5Hex(params.get("senhaAntiga"));
+        this.senhaNova = DigestUtils.md5Hex(params.get("senhaNova"));
+        this.confirmarSenhaNova = DigestUtils.md5Hex(params.get("confirmarSenhaNova"));
     }
 }
