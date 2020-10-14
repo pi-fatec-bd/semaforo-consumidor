@@ -4,6 +4,7 @@ import app.controllers.DeleteUsuarioPessoaFisicaController;
 import app.controllers.GetUsuarioPessoaFisicaController;
 import app.controllers.PostUsuarioPessoaFisicaController;
 import app.controllers.PutUsuarioPessoaFisicaController;
+import com.google.gson.Gson;
 
 import static spark.Spark.*;
 
@@ -23,9 +24,10 @@ public class Main {
         PutUsuarioPessoaFisicaController putUsuarioPessoaFisicaController = new PutUsuarioPessoaFisicaController();
         DeleteUsuarioPessoaFisicaController deleteUsuarioPessoaFisicaController = new DeleteUsuarioPessoaFisicaController();
         GetUsuarioPessoaFisicaController getUsuarioPessoaFisicaController = new GetUsuarioPessoaFisicaController();
+        Gson gson = new Gson();
 
         get("/", (req, res) -> "" );
-        get(URI_USUARIO_PESSOA_FISICA + "/:cpf", getUsuarioPessoaFisicaController.getUsuarioPessoaFisica);
+        get(URI_USUARIO_PESSOA_FISICA + "/:cpf", getUsuarioPessoaFisicaController.getUsuarioPessoaFisica, gson::toJson);
         post(URI_USUARIO_PESSOA_FISICA, postUsuarioPessoaFisicaController.cadastroPessoaFisica);
         put(URI_USUARIO_PESSOA_FISICA, putUsuarioPessoaFisicaController.putUsuarioPessoaFisica);
         delete(URI_USUARIO_PESSOA_FISICA + "/:cpf", deleteUsuarioPessoaFisicaController.deleteUsuarioPessoaFisica);

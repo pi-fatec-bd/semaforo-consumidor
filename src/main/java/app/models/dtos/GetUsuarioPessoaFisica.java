@@ -14,11 +14,11 @@ public class GetUsuarioPessoaFisica {
     @Override
     public String toString() {
         return "{" +
-                "cpf='" + cpf + '\'' +
-                ", sexo='" + sexo + '\'' +
-                ", anoNascimento=" + anoNascimento +
-                ", cidade='" + cidade + '\'' +
-                ", estado='" + estado + '\'' +
+                "'cpf': '" + cpf + "'," +
+                "'sexo': '" + sexo + "'," +
+                "'anoNascimento': '" + anoNascimento + "'," +
+                "'cidade': '" + cidade + "'," +
+                "'estado': '" + estado + "'" +
                 '}';
     }
 
