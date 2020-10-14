@@ -1,56 +1,32 @@
-document.addEventListener('DOMContentLoaded', function() {
-  var elems = document.querySelectorAll('select');
-  M.FormSelect.init(elems);
+$(document).ready(function() {
+    $('select').formSelect();
 });
 
-$( "#criarUsuario" ).click(function() {
-    var listaEstados = document.getElementById('listaEstados');
-
-    var dados = {
-      cpf: document.getElementById("cpf").value,
-      anoNascimento : document.getElementById("anoNascimento").value,
-      cidade: document.getElementById("cidade").value,
-      uf: listaEstados.options[listaEstados.selectedIndex].value,
-      sexo: $("input:radio[name=sexo]:checked").val(),
-      senha: document.getElementById("senha").value,
-      confirmarSenha: document.getElementById("confirmarSenha").value
+$('#cadastroForm').submit(function() {
+    const usuarioForm = {
+      cpf: $('#cpf').val(),
+      anoNascimento : $('#anoNascimento').val(),
+      cidade: $('#cidade').val(),
+      uf: $('#selectEstados').val(),
+      sexo: $('input:radio[name=sexo]:checked').val(),
+      senha: $('#senha').val(),
+      confirmarSenha: $('#confirmarSenha').val()
     }
   
-    $.post("http://localhost:4567/api/v1/PessoaFisica?" + $.param(dados), function() {
-        alert( "enviando..." );
+    $.post('http://localhost:4567/api/v1/UsuarioPessoaFisica', usuarioForm, function(response) {
+        alert(response);
     })
     .done(function() {
-        alert( "Cadastrado com sucesso!" )
-        window.location.href = "http://localhost:4567"
+        alert('Cadastrado com sucesso!')
+        window.location.href = 'http://localhost:4567'
     })
     .fail(function() {
-        alert( "Algum erro ocorreu, tente novamente mais tarde" );
+        alert('Algum erro ocorreu, tente novamente mais tarde');
     })
     .always(function() {
-        alert( "Você será redirecionado para a próxima página." );
+        alert('Você será redirecionado para a próxima página.');
     });
 })
-
-// $( "#listarCadastros" ).click(function() {
-//     // $.get("http://localhost:4567/api/v1/PessoaFisica", function(resultado){
-//     //     console.log(resultado)
-//     //     $("#resultado").html(resultado);
-//     // })
-//     $.getJSON(
-//        "http://localhost:4567/api/v1/PessoaFisica", function( resultado ) {
-//            var items = [];
-//            $.each( resultado[0], function( key, val ) {
-//            items.push( "<li id='" + key + "'>" + val + "</li>" );
-//         }
-//      );
-       
-//      $( "<ul/>", {
-//          "class": "my-new-list",
-//          html: items.join( "" )
-//        }).appendTo( "body" );
-//      });
-// })
-
 
 
 
