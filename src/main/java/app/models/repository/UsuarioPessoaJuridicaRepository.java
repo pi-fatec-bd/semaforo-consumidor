@@ -1,6 +1,7 @@
 package app.models.repository;
 
 import app.models.dtos.PostUsuarioPessoaJuridica;
+import app.models.dtos.PutUsuarioPessoaJuridica;
 import app.models.entities.UsuarioPessoaJuridica;
 
 import java.sql.Connection;
@@ -36,7 +37,7 @@ public class UsuarioPessoaJuridicaRepository {
     }
 
     public void insertUsuarioPessoaJuridica(PostUsuarioPessoaJuridica novoCadastro) throws SQLException {
-        String insertString = "INSERT INTO USUARIO_PESSOA_FISICA (UPJ_DOC_CLI, UPJ_EMAIL, UPJ_CELULAR," +
+        String insertString = "INSERT INTO USUARIO_PESSOA_JURIDICA (UPJ_DOC_CLI, UPJ_EMAIL, UPJ_CELULAR," +
                 " UPJ_NOM_CIDADE, UPJ_DES_ESTADO, UPJ_PJ_SENHA) VALUES(?,?,?,?,?,?)";
         try (Connection con = getConnection(ORACLE_URL, ORACLE_USER, ORACLE_USER_PASSWORD);
              PreparedStatement insertStatement = con.prepareStatement(insertString)) {
@@ -47,6 +48,32 @@ public class UsuarioPessoaJuridicaRepository {
             insertStatement.setString(5, novoCadastro.getEstado());
             insertStatement.setString(6, novoCadastro.getSenha());
             insertStatement.executeUpdate();
+        }
+    }
+
+    public void updateUsuarioPessoaJuridica(PutUsuarioPessoaJuridica usuarioPessoaJuridica) throws SQLException {
+        String updateString = "UPDATE USUARIO_PESSOA_JURIDICA SET UPJ_DOC_CLI = ?, UPJ_EMAIL = ?, " +
+                "UPJ_CELULAR = ?, UPJ_NOM_CIDADE = ?, UPJ_DES_ESTADO = ?, UPJ_PJ_SENHA = ? " +
+                "WHERE UPJ_DOC_CLI = ?";
+        try (Connection con = getConnection(ORACLE_URL, ORACLE_USER, ORACLE_USER_PASSWORD);
+             PreparedStatement updateStatement = con.prepareStatement(updateString)) {
+            updateStatement.setString(1, usuarioPessoaJuridica.getCnpj());
+            updateStatement.setString(2, usuarioPessoaJuridica.getEmail());
+            updateStatement.setString(3, usuarioPessoaJuridica.getCelular());
+            updateStatement.setString(4, usuarioPessoaJuridica.getCidade());
+            updateStatement.setString(5, usuarioPessoaJuridica.getEstado());
+            updateStatement.setString(6, usuarioPessoaJuridica.getSenhaNova());
+            updateStatement.setString(7, usuarioPessoaJuridica.getCnpj());
+            updateStatement.executeUpdate();
+        }
+    }
+
+    public void deleteUsuarioPessoaJuridica(String cnpj) throws SQLException {
+        String deleteString = "DELETE FROM USUARIO_PESSOA_JURIDICA WHERE UPJ_DOC_CLI = ?";
+        try (Connection con = getConnection(ORACLE_URL, ORACLE_USER, ORACLE_USER_PASSWORD);
+             PreparedStatement updateStatement = con.prepareStatement(deleteString)) {
+            updateStatement.setString(1, cnpj);
+            updateStatement.executeUpdate();
         }
     }
 }
