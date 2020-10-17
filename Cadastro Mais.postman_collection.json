@@ -6,183 +6,366 @@
 	},
 	"item": [
 		{
-			"name": "Post Usuario Pessoa Fisica",
-			"protocolProfileBehavior": {
-				"disabledSystemHeaders": {}
-			},
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "cpf",
-							"value": "98673869379",
-							"type": "text"
+			"name": "Usuario Pessoa Fisica",
+			"item": [
+				{
+					"name": "Post Usuario Pessoa Fisica",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "cpf",
+									"value": "98673869379",
+									"type": "text"
+								},
+								{
+									"key": "anoNascimento",
+									"value": "1997",
+									"type": "text"
+								},
+								{
+									"key": "cidade",
+									"value": "ITABUNA",
+									"type": "text"
+								},
+								{
+									"key": "estado",
+									"value": "BAHIA",
+									"type": "text"
+								},
+								{
+									"key": "sexo",
+									"value": "M",
+									"type": "text"
+								},
+								{
+									"key": "senha",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "confirmarSenha",
+									"value": "123",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
 						},
-						{
-							"key": "anoNascimento",
-							"value": "1997",
-							"type": "text"
-						},
-						{
-							"key": "cidade",
-							"value": "ITABUNA",
-							"type": "text"
-						},
-						{
-							"key": "estado",
-							"value": "BAHIA",
-							"type": "text"
-						},
-						{
-							"key": "sexo",
-							"value": "M",
-							"type": "text"
-						},
-						{
-							"key": "senha",
-							"value": "123",
-							"type": "text"
-						},
-						{
-							"key": "confirmarSenha",
-							"value": "123",
-							"type": "text"
+						"url": {
+							"raw": "http://localhost:4567/api/v1/UsuarioPessoaFisica",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"api",
+								"v1",
+								"UsuarioPessoaFisica"
+							]
 						}
-					],
-					"options": {
-						"raw": {
-							"language": "text"
-						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "http://localhost:4567/api/v1/UsuarioPessoaFisica",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "4567",
-					"path": [
-						"api",
-						"v1",
-						"UsuarioPessoaFisica"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Put Usuario Pessoa Fisica",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "cpf",
-							"value": "98673869379",
-							"type": "text"
-						},
-						{
-							"key": "anoNascimento",
-							"value": "1997",
-							"type": "text"
-						},
-						{
-							"key": "sexo",
-							"value": "F",
-							"type": "text"
-						},
-						{
-							"key": "cidade",
-							"value": "ITABUNA",
-							"type": "text"
-						},
-						{
-							"key": "estado",
-							"value": "BAHIA",
-							"type": "text"
-						},
-						{
-							"key": "senhaAntiga",
-							"value": "123",
-							"type": "text"
-						},
-						{
-							"key": "senhaNova",
-							"value": "12",
-							"type": "text"
-						},
-						{
-							"key": "confirmarSenhaNova",
-							"value": "12",
-							"type": "text"
+				{
+					"name": "Get Usuario Pessoa Fisica",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4567/api/v1/UsuarioPessoaFisica/98673869379",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"api",
+								"v1",
+								"UsuarioPessoaFisica",
+								"98673869379"
+							]
 						}
-					]
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "http://localhost:4567/api/v1/UsuarioPessoaFisica",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "4567",
-					"path": [
-						"api",
-						"v1",
-						"UsuarioPessoaFisica"
-					]
+				{
+					"name": "Delete Usuario Pessoa Fisica",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4567/api/v1/UsuarioPessoaFisica/98673869379",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"api",
+								"v1",
+								"UsuarioPessoaFisica",
+								"98673869379"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Usuario Pessoa Fisica",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "cpf",
+									"value": "98673869379",
+									"type": "text"
+								},
+								{
+									"key": "anoNascimento",
+									"value": "1997",
+									"type": "text"
+								},
+								{
+									"key": "sexo",
+									"value": "F",
+									"type": "text"
+								},
+								{
+									"key": "cidade",
+									"value": "ITABUNA",
+									"type": "text"
+								},
+								{
+									"key": "estado",
+									"value": "BAHIA",
+									"type": "text"
+								},
+								{
+									"key": "senhaAntiga",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "senhaNova",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "confirmarSenhaNova",
+									"value": "12",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4567/api/v1/UsuarioPessoaFisica",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"api",
+								"v1",
+								"UsuarioPessoaFisica"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
-			"name": "Delete Usuario Pessoa Fisica",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:4567/api/v1/UsuarioPessoaFisica/98673869379",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "4567",
-					"path": [
-						"api",
-						"v1",
-						"UsuarioPessoaFisica",
-						"98673869379"
-					]
+			"name": "Usuario Pessoa Juridica",
+			"item": [
+				{
+					"name": "Post Usuario Pessoa Juridica",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "cnpj",
+									"value": "12345678900",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "email@email.com.br",
+									"type": "text"
+								},
+								{
+									"key": "celular",
+									"value": "12997633562",
+									"type": "text"
+								},
+								{
+									"key": "cidade",
+									"value": "SAO JOSE DOS CAMPOS",
+									"type": "text"
+								},
+								{
+									"key": "estado",
+									"value": "SAO PAULO",
+									"type": "text"
+								},
+								{
+									"key": "senha",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "confirmarSenha",
+									"value": "123",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4567/api/v1/UsuarioPessoaJuridica",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"api",
+								"v1",
+								"UsuarioPessoaJuridica"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Usuario Pessoa Juridica",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4567/api/v1/UsuarioPessoaJuridica/12345678900",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"api",
+								"v1",
+								"UsuarioPessoaJuridica",
+								"12345678900"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Usuario Pessoa Juridica",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "cnpj",
+									"value": "12345678900",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "email@email.com.br",
+									"type": "text"
+								},
+								{
+									"key": "celular",
+									"value": "12997633562",
+									"type": "text"
+								},
+								{
+									"key": "cidade",
+									"value": "SAO JOSE DOS CAMPOS",
+									"type": "text"
+								},
+								{
+									"key": "estado",
+									"value": "SAO PAULO",
+									"type": "text"
+								},
+								{
+									"key": "senhaAntiga",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "senhaNova",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "confirmarSenhaNova",
+									"value": "12",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4567/api/v1/UsuarioPessoaJuridica",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"api",
+								"v1",
+								"UsuarioPessoaJuridica"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Usuario Pessoa Juridica",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4567/api/v1/UsuarioPessoaJuridica/12345678900",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"api",
+								"v1",
+								"UsuarioPessoaJuridica",
+								"12345678900"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
-		},
-		{
-			"name": "Get Usuario Pessoa Fisica",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:4567/api/v1/UsuarioPessoaFisica/98673869379",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "4567",
-					"path": [
-						"api",
-						"v1",
-						"UsuarioPessoaFisica",
-						"98673869379"
-					]
-				}
-			},
-			"response": []
+			],
+			"protocolProfileBehavior": {}
 		}
 	],
 	"protocolProfileBehavior": {}

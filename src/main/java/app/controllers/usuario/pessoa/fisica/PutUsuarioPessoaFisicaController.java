@@ -26,7 +26,7 @@ public class PutUsuarioPessoaFisicaController {
                 .equals(usuarioPessoaFisica.getSenhaAntiga())) {
             try {
                 usuarioPessoaFisicaRepository.updateUsuarioPessoaFisica(usuarioPessoaFisica);
-                response.status(204);
+                response.status(200);
                 response.body(MENSAGEM_SUCESSO_UPDATE);
             } catch (SQLException e) {
                 LOGGER.log(Level.INFO, e.getMessage());

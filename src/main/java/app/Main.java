@@ -45,7 +45,7 @@ public class Main {
         put(URI_USUARIO_PESSOA_FISICA, putUsuarioPessoaFisicaController.putUsuarioPessoaFisica);
         delete(URI_USUARIO_PESSOA_FISICA + "/:cpf", deleteUsuarioPessoaFisicaController.deleteUsuarioPessoaFisica);
         //ROTAS API USUARIO PESSOA JURIDICA
-        get(URI_USUARIO_PESSOA_JURIDICA + "/:cnpj", getUsuarioPessoaJuridicaController.getUsuarioPessoaJuridica);
+        get(URI_USUARIO_PESSOA_JURIDICA + "/:cnpj", getUsuarioPessoaJuridicaController.getUsuarioPessoaJuridica, gson::toJson);
         post(URI_USUARIO_PESSOA_JURIDICA, postUsuarioPessoaJuridicaController.postUsuarioPessoaJuridica);
         put(URI_USUARIO_PESSOA_JURIDICA, putUsuarioPessoaJuridicaController.putUsuarioPessoaJuridica);
         delete(URI_USUARIO_PESSOA_JURIDICA + "/:cnpj", deleteUsuarioPessoaJuridicaController.deleteUsuarioPessoaJuridica);

@@ -25,7 +25,7 @@ public class PutUsuarioPessoaJuridicaController {
         if(usuarioPessoaJuridicaRepository.selectUsuarioPessoaJuridica(usuarioPessoaJuridica.getCnpj()).getSenha()
                 .equals(usuarioPessoaJuridica.getSenhaAntiga())) {
             try {
-                usuarioPessoaJuridicaRepository.updateUsuarioPessoaJuridica(usuarioPessoaJuridica);response.status(204);
+                usuarioPessoaJuridicaRepository.updateUsuarioPessoaJuridica(usuarioPessoaJuridica);response.status(200);
                 response.body(MENSAGEM_SUCESSO_UPDATE);
             } catch (SQLException e) {
                 LOGGER.log(Level.INFO, e.getMessage());

@@ -19,7 +19,7 @@ public class DeleteUsuarioPessoaFisicaController {
     public final Route deleteUsuarioPessoaFisica = (Request request, Response response) -> {
         try {
             usuarioPessoaFisicaRepository.deleteUsuarioPessoaFisica(request.params(":cpf"));
-            response.status(204);
+            response.status(200);
             response.body(MENSAGEM_SUCESSO_DELETE);
         } catch (SQLException e) {
             LOGGER.log(Level.INFO, e.getMessage());
