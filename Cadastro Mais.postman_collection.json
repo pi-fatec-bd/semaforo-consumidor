@@ -366,6 +366,34 @@
 				}
 			],
 			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Score",
+			"item": [
+				{
+					"name": "Get Score",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4567/api/v1/Score/12345678900",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"api",
+								"v1",
+								"Score",
+								"12345678900"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
 		}
 	],
 	"protocolProfileBehavior": {}
