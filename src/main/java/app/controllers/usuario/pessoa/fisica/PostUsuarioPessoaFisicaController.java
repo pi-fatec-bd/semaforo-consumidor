@@ -1,4 +1,4 @@
-package app.controllers;
+package app.controllers.usuario.pessoa.fisica;
 
 import app.models.dtos.PostUsuarioPessoaFisica;
 import app.models.repository.PessoaFisicaRepository;
@@ -7,6 +7,7 @@ import spark.Request;
 import spark.Response;
 import spark.Route;
 
+import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -22,14 +23,14 @@ public class PostUsuarioPessoaFisicaController {
     private final PessoaFisicaRepository pessoaFisicaRepository = new PessoaFisicaRepository();
     private final UsuarioPessoaFisicaRepository usuarioPessoaFisicaRepository = new UsuarioPessoaFisicaRepository();
 
-    public final Route cadastroPessoaFisica = (Request request, Response response) -> {
+    public final Route postUsuarioPessoaFisica = (Request request, Response response) -> {
 
         PostUsuarioPessoaFisica novoCadastro = new PostUsuarioPessoaFisica(toMap(request));
 
         if(!novoCadastro.getSenha().equals(novoCadastro.getConfirmarSenha())) {
             response.status(400);
             response.body(MENSAGEM_SENHAS_DIFERENTES);
-            return response;
+            return response.body();
         }
 
         if(pessoaFisicaRepository.selectPessoaFisicaPorCPF(novoCadastro.getCpf()) != null) {
@@ -37,7 +38,7 @@ public class PostUsuarioPessoaFisicaController {
                 usuarioPessoaFisicaRepository.insertUsuarioPessoaFisica(novoCadastro);
                 response.status(201);
                 response.body(MENSAGEM_CADASTRO_SUCESSO);
-            } catch (Exception e) {
+            } catch (SQLException e) {
                 LOGGER.log(Level.INFO, e.getMessage());
                 response.status(500);
                 response.body(MENSAGEM_ERRO_CADASTRO);

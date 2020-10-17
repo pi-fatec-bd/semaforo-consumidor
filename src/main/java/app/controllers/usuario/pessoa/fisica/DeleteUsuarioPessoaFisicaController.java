@@ -1,10 +1,11 @@
-package app.controllers;
+package app.controllers.usuario.pessoa.fisica;
 
 import app.models.repository.UsuarioPessoaFisicaRepository;
 import spark.Request;
 import spark.Response;
 import spark.Route;
 
+import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -18,9 +19,9 @@ public class DeleteUsuarioPessoaFisicaController {
     public final Route deleteUsuarioPessoaFisica = (Request request, Response response) -> {
         try {
             usuarioPessoaFisicaRepository.deleteUsuarioPessoaFisica(request.params(":cpf"));
-            response.status(204);
+            response.status(200);
             response.body(MENSAGEM_SUCESSO_DELETE);
-        } catch (Exception e) {
+        } catch (SQLException e) {
             LOGGER.log(Level.INFO, e.getMessage());
             response.status(500);
             response.body(MENSAGEM_ERRO_DELETE);
