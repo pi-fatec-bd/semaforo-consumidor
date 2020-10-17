@@ -6,6 +6,7 @@ import spark.Request;
 import spark.Response;
 import spark.Route;
 
+import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -21,7 +22,7 @@ public class GetUsuarioPessoaFisicaController {
                     .selectUsuarioPessoaFisica(request.params(":cpf")));
             response.status(200);
             response.body(usuarioPessoaFisica.toString());
-        } catch (Exception e) {
+        } catch (SQLException e) {
             LOGGER.log(Level.INFO, e.getMessage());
             response.status(404);
             response.body(MENSAGEM_ERRO_SELECT);

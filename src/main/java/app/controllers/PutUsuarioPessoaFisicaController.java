@@ -6,6 +6,7 @@ import spark.Request;
 import spark.Response;
 import spark.Route;
 
+import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -27,7 +28,7 @@ public class PutUsuarioPessoaFisicaController {
                 usuarioPessoaFisicaRepository.updateUsuarioPessoaFisica(usuarioPessoaFisica);
                 response.status(204);
                 response.body(MENSAGEM_SUCESSO_UPDATE);
-            } catch (Exception e) {
+            } catch (SQLException e) {
                 LOGGER.log(Level.INFO, e.getMessage());
                 response.status(500);
                 response.body(MENSAGEM_ERRO_UPDATE);
