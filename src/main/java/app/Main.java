@@ -36,6 +36,6 @@ public class Main {
         delete(URI_USUARIO_PESSOA_FISICA + "/:cpf", deleteUsuarioPessoaFisicaController.deleteUsuarioPessoaFisica);
         //ROTAS API USUARIO PESSOA JURIDICA
         post(URI_USUARIO_PESSOA_JURIDICA, postUsuarioPessoaJuridicaController.postUsuarioPessoaJuridica);
-
+        put(URI_USUARIO_PESSOA_JURIDICA, putUsuarioPessoaFisicaController.putUsuarioPessoaFisica);
     }
 }
