@@ -1,4 +1,4 @@
-package app.controllers;
+package app.controllers.usuario.pessoa.fisica;
 
 import app.models.repository.UsuarioPessoaFisicaRepository;
 import spark.Request;

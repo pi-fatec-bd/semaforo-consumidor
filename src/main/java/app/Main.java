@@ -1,6 +1,13 @@
 package app;
 
-import app.controllers.*;
+import app.controllers.usuario.pessoa.fisica.DeleteUsuarioPessoaFisicaController;
+import app.controllers.usuario.pessoa.fisica.GetUsuarioPessoaFisicaController;
+import app.controllers.usuario.pessoa.fisica.PostUsuarioPessoaFisicaController;
+import app.controllers.usuario.pessoa.fisica.PutUsuarioPessoaFisicaController;
+import app.controllers.usuario.pessoa.juridica.DeleteUsuarioPessoaJuridicaController;
+import app.controllers.usuario.pessoa.juridica.GetUsuarioPessoaJuridicaController;
+import app.controllers.usuario.pessoa.juridica.PostUsuarioPessoaJuridicaController;
+import app.controllers.usuario.pessoa.juridica.PutUsuarioPessoaJuridicaController;
 import com.google.gson.Gson;
 
 import static spark.Spark.*;
@@ -24,6 +31,9 @@ public class Main {
         GetUsuarioPessoaFisicaController getUsuarioPessoaFisicaController = new GetUsuarioPessoaFisicaController();
 
         PostUsuarioPessoaJuridicaController postUsuarioPessoaJuridicaController = new PostUsuarioPessoaJuridicaController();
+        PutUsuarioPessoaJuridicaController putUsuarioPessoaJuridicaController = new PutUsuarioPessoaJuridicaController();
+        DeleteUsuarioPessoaJuridicaController deleteUsuarioPessoaJuridicaController = new DeleteUsuarioPessoaJuridicaController();
+        GetUsuarioPessoaJuridicaController getUsuarioPessoaJuridicaController = new GetUsuarioPessoaJuridicaController();
 
         Gson gson = new Gson();
 
@@ -35,7 +45,9 @@ public class Main {
         put(URI_USUARIO_PESSOA_FISICA, putUsuarioPessoaFisicaController.putUsuarioPessoaFisica);
         delete(URI_USUARIO_PESSOA_FISICA + "/:cpf", deleteUsuarioPessoaFisicaController.deleteUsuarioPessoaFisica);
         //ROTAS API USUARIO PESSOA JURIDICA
+        get(URI_USUARIO_PESSOA_JURIDICA + "/:cnpj", getUsuarioPessoaJuridicaController.getUsuarioPessoaJuridica);
         post(URI_USUARIO_PESSOA_JURIDICA, postUsuarioPessoaJuridicaController.postUsuarioPessoaJuridica);
-        put(URI_USUARIO_PESSOA_JURIDICA, putUsuarioPessoaFisicaController.putUsuarioPessoaFisica);
+        put(URI_USUARIO_PESSOA_JURIDICA, putUsuarioPessoaJuridicaController.putUsuarioPessoaJuridica);
+        delete(URI_USUARIO_PESSOA_JURIDICA + "/:cnpj", deleteUsuarioPessoaJuridicaController.deleteUsuarioPessoaJuridica);
     }
 }

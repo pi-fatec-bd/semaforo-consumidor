@@ -1,4 +1,4 @@
-package app.controllers;
+package app.controllers.usuario.pessoa.juridica;
 
 import app.models.dtos.PutUsuarioPessoaJuridica;
 import app.models.repository.UsuarioPessoaJuridicaRepository;
@@ -20,7 +20,7 @@ public class PutUsuarioPessoaJuridicaController {
 
     UsuarioPessoaJuridicaRepository usuarioPessoaJuridicaRepository = new UsuarioPessoaJuridicaRepository();
 
-    private final Route putUsuarioPessoaJuridica = (Request request, Response response) -> {
+    public final Route putUsuarioPessoaJuridica = (Request request, Response response) -> {
         PutUsuarioPessoaJuridica usuarioPessoaJuridica = new PutUsuarioPessoaJuridica(toMap(request));
         if(usuarioPessoaJuridicaRepository.selectUsuarioPessoaJuridica(usuarioPessoaJuridica.getCnpj()).getSenha()
                 .equals(usuarioPessoaJuridica.getSenhaAntiga())) {

@@ -1,4 +1,4 @@
-package app.controllers;
+package app.controllers.usuario.pessoa.juridica;
 
 import app.models.dtos.PostUsuarioPessoaJuridica;
 import app.models.repository.UsuarioPessoaJuridicaRepository;
