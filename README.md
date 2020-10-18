@@ -12,7 +12,17 @@ O Cadastro Mais ao contrário de outros sistemas, trabalha tanto para reduzir a 
 
 Sprint 0  | Sprint 1 | Sprint 2 | Sprint 3  
 --------- |--------- |--------- |--------- |
-[Apresentação 1](https://github.com/pi-fatec-bd/cadastro-mais/blob/master/assets/sprint0.pdf) |[indisponível](link) |[indisponível](link) |[indisponível](link) |
+[Apresentação 0](https://github.com/pi-fatec-bd/cadastro-mais/blob/master/assets/sprint0.pdf) |[Apresentação 1](https://www.youtube.com/watch?v=7KiylucX0bA&feature=youtu.be) |[indisponível](link) |[indisponível](link) |
+
+### 1.3. Plano de Negócios
+
+* [Plano de Negócios](https://github.com/pi-fatec-bd/cadastro-mais/wiki/PLANO-DE-NEG%C3%93CIOS---CADASTRO-MAIS)
+
+### 1.4 Wiki do Projeto
+
+Na Wiki do projeto você pode conferir mais detalhes do projeto como as Personas, o Setup, regras para criação de APIs e muitos outros detalhes da documentação.
+
+* [Wiki Cadastro Mais](https://github.com/pi-fatec-bd/cadastro-mais/wiki)
 
 ## 2. Arquitetura do Projeto
 ![Arquitetura Macro](https://github.com/pi-fatec-bd/cadastro-mais/blob/master/Arquitetura%20Macro.png)
