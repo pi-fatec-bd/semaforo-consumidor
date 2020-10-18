@@ -2,16 +2,36 @@
 <html lang="pt-br">
     <head>
         <meta charset="utf-8">
-        <title>Titulo</title>
+        <title>Cadastro Mais</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
     </head>
 
     <body>
-        <h1>Texto</h1>
-        <a href="/login.html">Login</a>
-        <a href="/cadastro.html">Cadastro</a>
-
+        <nav class="navibar" role="navigation">
+            <div class="nav-wrapper container">
+                <a id="logo-container" href="/tela-principal.html">
+                    <strong>CADASTRO MAIS</strong> 
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#">Cadastre-se</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            
+                <ul id="nav-mobile" class="sidenav">
+                    <li><a href="#">Cadastre-se</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+                 <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+        <main class="container">
+            <h1>Texto</h1>
+            <a href="/login.html">Login</a>
+            <a href="/cadastro.html">Cadastro</a>    
+        </main>
+        
+        <!--  Scripts-->
         <script src="js/materialize.min.js"></script>
     </body>
 </html>
