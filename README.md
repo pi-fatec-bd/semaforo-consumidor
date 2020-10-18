@@ -18,11 +18,13 @@ Sprint 0  | Sprint 1 | Sprint 2 | Sprint 3
 
 * [Plano de Negócios](https://github.com/pi-fatec-bd/cadastro-mais/wiki/PLANO-DE-NEG%C3%93CIOS---CADASTRO-MAIS)
 
-### 1.4 Wiki do Projeto
+### 1.4. Wiki do Projeto
 
 Na Wiki do projeto você pode conferir mais detalhes do projeto como as Personas, o Setup, regras para criação de APIs e muitos outros detalhes da documentação.
 
 * [Wiki Cadastro Mais](https://github.com/pi-fatec-bd/cadastro-mais/wiki)
+
+---
 
 ## 2. Arquitetura do Projeto
 ![Arquitetura Macro](https://github.com/pi-fatec-bd/cadastro-mais/blob/master/Arquitetura%20Macro.png)
@@ -50,6 +52,8 @@ Camada refletindo as entidades do banco de dados, concentrando as regras de neg�
 
 ### 2.3 DB
 Banco de dados
+
+---
 
 ## 3. Backlog
 
@@ -191,6 +195,7 @@ R32. Ajuda e documentação do produto;
 
 **R32.** Ajuda e documentação do produto;
 
+---
 
 ## 4. Wireframe
 Aqui temos o Wireframe incial do projeto. Wireframe é um protótipo usado em design de interface para sugerir a estrutura de uma aplicação ou site. Aqui, estão os designs inciais das telas de login, sign up, perfil do usário e adição de dados do próprio usuário.
@@ -238,10 +243,15 @@ Nesta tela o usuário atualiza sua conta, informando dados não obrigatórios, m
 <p align="center">
   <img src="./media/userdata/phone.png" alt="Logo" width=50% height=50%>
 </p>
+
+---
+
 ## 5. Modelagem do Banco de Dados
 <p align="center">
   <img src="./media/uml.png" alt="uml" width=50% height=50%>
 </p>
+
+---
 
 ## 6. Equipe
 
