@@ -56,5 +56,7 @@ public class Main {
         //ROTA API SCORE
         //FAKE POR ENQUANTO
         get(URI_SCORE + "/:doc_cli", getScoreController.getScore);
+        //ROTA API DADOS PF
+        //get(URI_DADOS_PF, );
     }
 }

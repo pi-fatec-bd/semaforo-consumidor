@@ -1,0 +1,23 @@
+package app.models.entities;
+
+import lombok.AllArgsConstructor;
+
+import java.math.BigDecimal;
+import java.math.BigInteger;
+import java.sql.Date;
+
+@AllArgsConstructor
+public class Movimento {
+    private final Integer id;
+    private final String cpf;
+    private final Integer idFonte;
+    private final BigInteger numeroContrato;
+    private final Date dataVencimentoParcela;
+    private final Integer quantidadeParcelasVencer;
+    private final Integer quantidadeParcelasPagar;
+    private final BigDecimal valorTotalFatura;
+    private final BigDecimal valorMinimoFatura;
+    private final BigDecimal valorParcela;
+    private final String tipoMovimento;
+    private final String periodicidade;
+}
