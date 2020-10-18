@@ -1,0 +1,40 @@
+.row {
+    padding-top: 50px;
+}
+
+#logo-container {
+    margin: 10px;
+    font-size: larger;
+}
+
+.navibar {
+    background-color:#7300e6;
+}
+
+#video {
+    margin-top: 40px;
+}
+
+footer {
+    background-color:#7300e6;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.botao {
+    background-color:#7300e6; 
+    color: white;
+    margin: 20px;
+    padding: 20px 50px 20px 50px;
+    border-radius: 5%;
+
+}
+
+.consultar {
+    font-size: 18px;
+}
+
+p {
+    font-size: 16px;
+}
