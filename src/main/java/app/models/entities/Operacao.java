@@ -3,14 +3,13 @@ package app.models.entities;
 import lombok.AllArgsConstructor;
 
 import java.math.BigDecimal;
-import java.math.BigInteger;
 import java.sql.Date;
 
 @AllArgsConstructor
 public class Operacao {
     private final Integer id;
     private final String cpf;
-    private final BigInteger numeroContrato;
+    private final Integer numeroContrato;
     private final Integer idModalidade;
     private final String codigoModalidade;
     private final Integer quantidadeParcelasContrato;
