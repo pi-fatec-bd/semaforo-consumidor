@@ -24,6 +24,10 @@ Na Wiki do projeto você pode conferir mais detalhes do projeto como as Personas
 
 * [Wiki Cadastro Mais](https://github.com/pi-fatec-bd/cadastro-mais/wiki)
 
+### 1.5. Equipe
+
+Equipe 3 - Comix
+
 ---
 
 ## 2. Arquitetura do Projeto
