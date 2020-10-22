@@ -394,6 +394,34 @@
 				}
 			],
 			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Dados CPF",
+			"item": [
+				{
+					"name": "Get Dados CPF",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4567/api/v1/DadosPF/13960404994",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"api",
+								"v1",
+								"DadosPF",
+								"13960404994"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
 		}
 	],
 	"protocolProfileBehavior": {}
