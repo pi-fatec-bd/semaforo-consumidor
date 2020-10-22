@@ -19,7 +19,7 @@ public class GetUsuarioPessoaFisicaController {
     public final Route getUsuarioPessoaFisica = (Request request, Response response) -> {
         try {
             GetUsuarioPessoaFisica usuarioPessoaFisica = new GetUsuarioPessoaFisica(usuarioPessoaFisicaRepository
-                    .selectUsuarioPessoaFisica(request.params(":cpf")));
+                    .selectUsuarioPessoaFisica(request.params(":doc_cli")));
             response.status(200);
             response.body(usuarioPessoaFisica.toString());
         } catch (SQLException e) {

@@ -18,7 +18,7 @@ public class DeleteUsuarioPessoaFisicaController {
 
     public final Route deleteUsuarioPessoaFisica = (Request request, Response response) -> {
         try {
-            usuarioPessoaFisicaRepository.deleteUsuarioPessoaFisica(request.params(":cpf"));
+            usuarioPessoaFisicaRepository.deleteUsuarioPessoaFisica(request.params(":doc_cli"));
             response.status(200);
             response.body(MENSAGEM_SUCESSO_DELETE);
         } catch (SQLException e) {
