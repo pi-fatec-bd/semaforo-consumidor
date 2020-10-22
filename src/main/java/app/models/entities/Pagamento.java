@@ -1,11 +1,13 @@
 package app.models.entities;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 
 import java.math.BigDecimal;
 import java.sql.Date;
 
 @AllArgsConstructor
+@Getter
 public class Pagamento {
     private final Integer id;
     private final String cpf;

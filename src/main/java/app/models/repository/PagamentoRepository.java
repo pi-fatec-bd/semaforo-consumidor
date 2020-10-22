@@ -15,8 +15,8 @@ public class PagamentoRepository {
         try (Connection con = getConnection(ORACLE_URL, ORACLE_USER, ORACLE_USER_PASSWORD)) {
             ResultSet resultSet;
             final String selectString = "SELECT * FROM PAGAMENTOS WHERE PGT_DOC_CLI = ? AND PGT_NUM_UNC = ? AND PGT_DAT_VCT = ?";
+            final List<Pagamento> pagamentos = new ArrayList<>();
 
-            List<Pagamento> pagamentos = new ArrayList<>();
             try (PreparedStatement selectStatement = con.prepareStatement(selectString)) {
                 selectStatement.setString(1, cpf);
                 selectStatement.setInt(2, contrato);

@@ -1,5 +1,6 @@
 package app;
 
+import app.controllers.dados.GetDadosCPFController;
 import app.controllers.score.GetScoreController;
 import app.controllers.usuario.pessoa.fisica.DeleteUsuarioPessoaFisicaController;
 import app.controllers.usuario.pessoa.fisica.GetUsuarioPessoaFisicaController;
@@ -20,6 +21,9 @@ public class Main {
     private static final String URI_USUARIO_PESSOA_FISICA = "/api/v1/UsuarioPessoaFisica";
     private static final String URI_USUARIO_PESSOA_JURIDICA = "api/v1/UsuarioPessoaJuridica";
     private static final String URI_SCORE = "/api/v1/Score";
+    private static final String URI_DADOS_PF = "/api/v1/DadosPF";
+
+    private static final String DOC_CLI = "/:doc_cli";
 
     public static void main(String[] args) {
         String projectDir = System.getProperty("user.dir");
@@ -41,22 +45,25 @@ public class Main {
         //CONTROLLER SCORE
         GetScoreController getScoreController = new GetScoreController();
 
+        //CONTROLLER DADOS CPF
+        GetDadosCPFController getDadosCPFController = new GetDadosCPFController();
+
         // ROTAS
         get("/", (req, res) -> "" );
         //ROTAS API USUARIO PESSOA FISICA
-        get(URI_USUARIO_PESSOA_FISICA + "/:cpf", getUsuarioPessoaFisicaController.getUsuarioPessoaFisica);
+        get(URI_USUARIO_PESSOA_FISICA + DOC_CLI, getUsuarioPessoaFisicaController.getUsuarioPessoaFisica);
         post(URI_USUARIO_PESSOA_FISICA, postUsuarioPessoaFisicaController.postUsuarioPessoaFisica);
         put(URI_USUARIO_PESSOA_FISICA, putUsuarioPessoaFisicaController.putUsuarioPessoaFisica);
-        delete(URI_USUARIO_PESSOA_FISICA + "/:cpf", deleteUsuarioPessoaFisicaController.deleteUsuarioPessoaFisica);
+        delete(URI_USUARIO_PESSOA_FISICA + DOC_CLI, deleteUsuarioPessoaFisicaController.deleteUsuarioPessoaFisica);
         //ROTAS API USUARIO PESSOA JURIDICA
-        get(URI_USUARIO_PESSOA_JURIDICA + "/:cnpj", getUsuarioPessoaJuridicaController.getUsuarioPessoaJuridica);
+        get(URI_USUARIO_PESSOA_JURIDICA + DOC_CLI, getUsuarioPessoaJuridicaController.getUsuarioPessoaJuridica);
         post(URI_USUARIO_PESSOA_JURIDICA, postUsuarioPessoaJuridicaController.postUsuarioPessoaJuridica);
         put(URI_USUARIO_PESSOA_JURIDICA, putUsuarioPessoaJuridicaController.putUsuarioPessoaJuridica);
-        delete(URI_USUARIO_PESSOA_JURIDICA + "/:cnpj", deleteUsuarioPessoaJuridicaController.deleteUsuarioPessoaJuridica);
+        delete(URI_USUARIO_PESSOA_JURIDICA + DOC_CLI, deleteUsuarioPessoaJuridicaController.deleteUsuarioPessoaJuridica);
         //ROTA API SCORE
         //FAKE POR ENQUANTO
-        get(URI_SCORE + "/:doc_cli", getScoreController.getScore);
+        get(URI_SCORE + DOC_CLI, getScoreController.getScore);
         //ROTA API DADOS PF
-        //get(URI_DADOS_PF, );
+        get(URI_DADOS_PF + DOC_CLI, getDadosCPFController.getDadosCPF);
     }
 }

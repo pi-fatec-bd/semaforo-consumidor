@@ -19,7 +19,7 @@ public class GetUsuarioPessoaJuridicaController {
     public final Route getUsuarioPessoaJuridica = (Request request, Response response) -> {
         try {
             GetUsuarioPessoaJuridica usuarioPessoaJuridica = new GetUsuarioPessoaJuridica(usuarioPessoaJuridicaRepository
-                    .selectUsuarioPessoaJuridica(request.params(":cnpj")));
+                    .selectUsuarioPessoaJuridica(request.params(":doc_cli")));
             response.status(200);
             response.body(usuarioPessoaJuridica.toString());
         } catch (SQLException e) {
