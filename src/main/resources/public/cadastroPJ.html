@@ -7,22 +7,22 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <title>Pessoas Físicas - Cadastro</title>
+    <title>Pessoas Jurídicas - Cadastro</title>
 </head>
 <body>
     <nav class="navibar" role="navigation">
         <div class="nav-wrapper container">
-            <a id="logo-container" href="/tela-principal.html">
+            <a id="logo-container" href="/index.html">
                 <strong>CADASTRO MAIS</strong> 
             </a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Login</a></li>
+                <li><a href="/index.html">Início</a></li>
+                <li><a href="/login.html">Login</a></li>
             </ul>
         
             <ul id="nav-mobile" class="sidenav">
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Login</a></li>
+                <li><a href="/index.html">Início</a></li>
+                <li><a href="/login.html">Login</a></li>
             </ul>
              <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </div>
@@ -32,24 +32,20 @@
     </div>
     <main class="container">
         <section class="row">
-            <form id="cadastroForm" class="offset-">
+            <form id="cadastroFormPJ" class="offset-">
                 <div class="row">
                     <div class="input-field col l6 s12">
-                        <input id="cpf" type="text" class="validate" data-mask="00000000000" required>
-                        <label for="cpf">CPF (00000000000)</label>
-                    </div>
-                    <div class="input-field col l6 s12">
-                        <input id="anoNascimento" type="text" class="validate" data-mask="0000" required>
-                        <label for="anoNascimento">Ano de Nascimento (0000)</label>
+                        <input id="cnpj" type="text" class="validate" data-mask="00000000000" required>
+                        <label for="cnpj">CNPJ (00000000000000)</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col l6 s12">
-                        <input id="cidade" type="text" class="validate">
-                        <label for="cidade">Cidade</label>
+                        <input id="cidadePJ" type="text" class="validate">
+                        <label for="cidadePJ">Cidade</label>
                     </div>
                     <div class = "input-field col l6 s12">
-                        <select id="selectEstados">
+                        <select id="selectEstadosPJ">
                             <option value = "" disabled selected>Escolha um Estado</option>
                             <option value = "ACRE">Acre</option>
                             <option value = "ALAGOAS">Alagoas</option>
@@ -84,31 +80,16 @@
                 </div>
                 <div class="row">
                     <div class="input-field col l6 s12">
-                        <input id="senha" type="password" class="validate" required>
-                        <label for="senha">Digite sua senha</label>
+                        <input id="senhaPj" type="password" class="validate" required>
+                        <label for="senhaPj">Digite sua senha</label>
                     </div>
                     <div class="input-field col l6 s12">
-                        <input id="confirmarSenha" type="password" class="validate" required>
-                        <label for="confirmarSenha">Confirme sua senha</label>
+                        <input id="confirmarSenhaPJ" type="password" class="validate" required>
+                        <label for="confirmarSenhaPJ">Confirme sua senha</label>
                     </div>
                 </div>
-                <div class="row">
-                    <label style="font-size: medium;">Sexo</label>
-                    <p>
-                        <label>
-                            <input id="fem" name="sexo" type="radio" value="F" checked />
-                            <span>Feminino</span>
-                        </label>
-                    </p>
-                    <p>
-                        <label>
-                            <input id="mal" name="sexo" type="radio" value="M" />
-                            <span>Masculino</span>
-                        </label>
-                    </p>
-                </div>
                 <div class="center">
-                    <button class="btn waves-effect waves-light" id="criarUsuario" type="submit" name="action">Cadastrar
+                    <button class="btn waves-effect waves-light" id="criarPJ" type="submit" name="action">Cadastrar Pessoa Jurídica
                         <i class="material-icons right">send</i>
                     </button>
                 </div>
@@ -123,6 +104,6 @@
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.min.js" ></script>
     <script src="js/materialize.min.js"></script>
-    <script src="js/cadastroPF.js"></script>
+    <script src="js/cadastroPJ.js"></script>
 </body>
 </html>
