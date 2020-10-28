@@ -203,7 +203,7 @@
 							"urlencoded": [
 								{
 									"key": "cnpj",
-									"value": "12345678900",
+									"value": "12345678901234",
 									"type": "text"
 								},
 								{
@@ -260,7 +260,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:4567/api/v1/UsuarioPessoaJuridica/12345678900",
+							"raw": "http://localhost:4567/api/v1/UsuarioPessoaJuridica/12345678901234",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -270,7 +270,7 @@
 								"api",
 								"v1",
 								"UsuarioPessoaJuridica",
-								"12345678900"
+								"12345678901234"
 							]
 						}
 					},
@@ -286,7 +286,7 @@
 							"urlencoded": [
 								{
 									"key": "cnpj",
-									"value": "12345678900",
+									"value": "12345678901234",
 									"type": "text"
 								},
 								{
@@ -348,7 +348,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:4567/api/v1/UsuarioPessoaJuridica/12345678900",
+							"raw": "http://localhost:4567/api/v1/UsuarioPessoaJuridica/12345678901234",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -358,7 +358,7 @@
 								"api",
 								"v1",
 								"UsuarioPessoaJuridica",
-								"12345678900"
+								"12345678901234"
 							]
 						}
 					},
