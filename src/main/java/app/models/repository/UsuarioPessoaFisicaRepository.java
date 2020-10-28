@@ -19,9 +19,9 @@ public class UsuarioPessoaFisicaRepository {
         ResultSet resultSet;
         UsuarioPessoaFisica usuarioPessoaFisica = null;
         try (Connection con = getConnection(ORACLE_URL, ORACLE_USER, ORACLE_USER_PASSWORD);
-             PreparedStatement updateStatement = con.prepareStatement(selectString)) {
-            updateStatement.setString(1, cpf);
-            resultSet = updateStatement.executeQuery();
+             PreparedStatement selectStatement = con.prepareStatement(selectString)) {
+            selectStatement.setString(1, cpf);
+            resultSet = selectStatement.executeQuery();
             if(resultSet.next()) {
                 usuarioPessoaFisica = new UsuarioPessoaFisica(
                     resultSet.getString(1),
