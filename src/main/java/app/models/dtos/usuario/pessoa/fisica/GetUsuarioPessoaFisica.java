@@ -1,4 +1,4 @@
-package app.models.dtos;
+package app.models.dtos.usuario.pessoa.fisica;
 
 import app.models.entities.UsuarioPessoaFisica;
 import lombok.Getter;

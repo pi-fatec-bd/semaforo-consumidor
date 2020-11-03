@@ -27,7 +27,7 @@ public class OperacaoRepository {
                     operacoes.add(new Operacao(
                             resultSet.getInt(1),
                             resultSet.getString(2),
-                            resultSet.getInt(3),
+                            resultSet.getLong(3),
                             resultSet.getInt(4),
                             resultSet.getString(5),
                             resultSet.getInt(6),

@@ -1,5 +1,6 @@
 package app.models.repository;
 
+import app.models.dtos.listanegra.ListaNegraDTO;
 import app.models.entities.ListaNegra;
 
 import java.sql.Connection;
@@ -12,8 +13,8 @@ import static java.sql.DriverManager.getConnection;
 
 public class ListaNegraRepository {
 
-    public ListaNegra selectListaNegra(ListaNegra lista) throws SQLException {
-        String selectString = "SELECT * LISTA_NEGRA WHERE LIS_BLOQUEADOR_DOC_CLI = ? AND LIS_BLOQUEADO_DOC_CLI = ?";
+    public ListaNegra selectListaNegra(ListaNegraDTO lista) throws SQLException {
+        String selectString = "SELECT * FROM LISTA_NEGRA WHERE LIS_BLOQUEADOR_DOC_CLI = ? AND LIS_BLOQUEADO_DOC_CLI = ?";
         ResultSet resultSet;
         ListaNegra selectListaNegra = null;
         try (Connection con = getConnection(ORACLE_URL, ORACLE_USER, ORACLE_USER_PASSWORD);
@@ -31,7 +32,7 @@ public class ListaNegraRepository {
         return selectListaNegra;
     }
 
-    public void insertListaNegra(ListaNegra novaLista) throws SQLException {
+    public void insertListaNegra(ListaNegraDTO novaLista) throws SQLException {
         String insertString = "INSERT INTO LISTA_NEGRA (LIS_BLOQUEADOR_DOC_CLI, LIS_BLOQUEADO_DOC_CLI) VALUES(?,?)";
         try (Connection con = getConnection(ORACLE_URL, ORACLE_USER, ORACLE_USER_PASSWORD);
              PreparedStatement insertStatement = con.prepareStatement(insertString)) {

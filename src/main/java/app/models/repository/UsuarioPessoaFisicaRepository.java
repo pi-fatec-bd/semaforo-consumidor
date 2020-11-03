@@ -1,7 +1,7 @@
 package app.models.repository;
 
-import app.models.dtos.PostUsuarioPessoaFisica;
-import app.models.dtos.PutUsuarioPessoaFisica;
+import app.models.dtos.usuario.pessoa.fisica.PostUsuarioPessoaFisica;
+import app.models.dtos.usuario.pessoa.fisica.PutUsuarioPessoaFisica;
 import app.models.entities.UsuarioPessoaFisica;
 
 import java.sql.Connection;

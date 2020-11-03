@@ -12,7 +12,7 @@ public class GetDadosCPFMovimento {
     private final Integer id;
     private final String cpf;
     private final Integer idFonte;
-    private final Integer numeroContrato;
+    private final Long numeroContrato;
     private final Date dataVencimentoParcela;
     private final Integer quantidadeParcelasVencer;
     private final Integer quantidadeParcelasPagar;

@@ -23,7 +23,7 @@ public class PostListaNegraController {
 
         ListaNegraDTO novaLista = new ListaNegraDTO(toMap(request));
 
-        if(!novaLista.getDocCliBloqueador().equals(novaLista.getDocCliBloqueado())) {
+        if(novaLista.getDocCliBloqueador().equals(novaLista.getDocCliBloqueado())) {
             response.status(400);
             response.body(MENSAGEM_DOC_CLI_IGUAIS);
             return response.body();

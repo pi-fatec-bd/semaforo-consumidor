@@ -1,4 +1,4 @@
-package app.models.dtos;
+package app.models.dtos.usuario.pessoa.fisica;
 
 import lombok.Getter;
 import org.apache.commons.codec.digest.DigestUtils;
@@ -7,14 +7,14 @@ import java.util.Map;
 
 @Getter
 public class PutUsuarioPessoaFisica {
-    private String cpf;
-    private Integer anoNascimento;
-    private String sexo;
-    private String cidade;
-    private String estado;
-    private String senhaAntiga;
-    private String senhaNova;
-    private String confirmarSenhaNova;
+    private final String cpf;
+    private final Integer anoNascimento;
+    private final String sexo;
+    private final String cidade;
+    private final String estado;
+    private final String senhaAntiga;
+    private final String senhaNova;
+    private final String confirmarSenhaNova;
 
     public PutUsuarioPessoaFisica(Map<String, String> params) {
         this.cpf = params.get("cpf");
