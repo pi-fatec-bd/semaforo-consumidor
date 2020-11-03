@@ -11,7 +11,7 @@ import java.sql.Date;
 public class Operacao {
     private final Integer id;
     private final String cpf;
-    private final Integer numeroContrato;
+    private final Long numeroContrato;
     private final Integer idModalidade;
     private final String codigoModalidade;
     private final Integer quantidadeParcelasContrato;

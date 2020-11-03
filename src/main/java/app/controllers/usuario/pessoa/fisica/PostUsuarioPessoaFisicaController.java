@@ -1,6 +1,6 @@
 package app.controllers.usuario.pessoa.fisica;
 
-import app.models.dtos.PostUsuarioPessoaFisica;
+import app.models.dtos.usuario.pessoa.fisica.PostUsuarioPessoaFisica;
 import app.models.repository.PessoaFisicaRepository;
 import app.models.repository.UsuarioPessoaFisicaRepository;
 import spark.Request;

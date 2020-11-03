@@ -1,6 +1,6 @@
 package app.controllers.usuario.pessoa.juridica;
 
-import app.models.dtos.PostUsuarioPessoaJuridica;
+import app.models.dtos.usuario.pessoa.juridica.PostUsuarioPessoaJuridica;
 import app.models.repository.UsuarioPessoaJuridicaRepository;
 import spark.Request;
 import spark.Response;

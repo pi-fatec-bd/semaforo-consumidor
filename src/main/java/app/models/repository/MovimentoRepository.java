@@ -14,7 +14,7 @@ import static java.sql.DriverManager.getConnection;
 
 public class MovimentoRepository {
 
-    public List<Movimento> selectMovimentosPorCpfENumeroContrato(String cpf, Integer contrato) throws SQLException {
+    public List<Movimento> selectMovimentosPorCpfENumeroContrato(String cpf, Long contrato) throws SQLException {
         try (Connection con = getConnection(ORACLE_URL, ORACLE_USER, ORACLE_USER_PASSWORD)) {
             ResultSet resultSet;
             final String selectString = "SELECT * FROM MOVIMENTOS WHERE MOV_DOC_CLI = ? AND MOV_NUM_UNC = ?";
@@ -22,14 +22,14 @@ public class MovimentoRepository {
             List<Movimento> movimentos = new ArrayList<>();
             try (PreparedStatement selectStatement = con.prepareStatement(selectString)) {
                 selectStatement.setString(1, cpf);
-                selectStatement.setInt(2, contrato);
+                selectStatement.setLong(2, contrato);
                 resultSet = selectStatement.executeQuery();
                 while(resultSet.next()) {
                     movimentos.add(new Movimento(
                             resultSet.getInt(1),
                             resultSet.getString(2),
                             resultSet.getInt(3),
-                            resultSet.getInt(4),
+                            resultSet.getLong(4),
                             resultSet.getDate(5),
                             resultSet.getInt(6),
                             resultSet.getInt(7),

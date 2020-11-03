@@ -10,7 +10,7 @@ import java.util.List;
 public class GetDadosCPFOperacao {
     private final Integer id;
     private final String cpf;
-    private final Integer numeroContrato;
+    private final Long numeroContrato;
     private final Integer idModalidade;
     private final String codigoModalidade;
     private final Integer quantidadeParcelasContrato;

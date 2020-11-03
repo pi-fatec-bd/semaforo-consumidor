@@ -203,7 +203,7 @@
 							"urlencoded": [
 								{
 									"key": "cnpj",
-									"value": "12345678900",
+									"value": "12345678901234",
 									"type": "text"
 								},
 								{
@@ -260,7 +260,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:4567/api/v1/UsuarioPessoaJuridica/12345678900",
+							"raw": "http://localhost:4567/api/v1/UsuarioPessoaJuridica/12345678901234",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -270,7 +270,7 @@
 								"api",
 								"v1",
 								"UsuarioPessoaJuridica",
-								"12345678900"
+								"12345678901234"
 							]
 						}
 					},
@@ -286,7 +286,7 @@
 							"urlencoded": [
 								{
 									"key": "cnpj",
-									"value": "12345678900",
+									"value": "12345678901234",
 									"type": "text"
 								},
 								{
@@ -348,7 +348,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:4567/api/v1/UsuarioPessoaJuridica/12345678900",
+							"raw": "http://localhost:4567/api/v1/UsuarioPessoaJuridica/12345678901234",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -358,7 +358,7 @@
 								"api",
 								"v1",
 								"UsuarioPessoaJuridica",
-								"12345678900"
+								"12345678901234"
 							]
 						}
 					},
@@ -404,7 +404,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:4567/api/v1/DadosPF/13960404994",
+							"raw": "http://localhost:4567/api/v1/DadosPF/66607215875",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -414,7 +414,94 @@
 								"api",
 								"v1",
 								"DadosPF",
-								"13960404994"
+								"66607215875"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Lista Negra",
+			"item": [
+				{
+					"name": "Post Lista Negra",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "docCliBloqueador",
+									"value": "66607215875",
+									"type": "text"
+								},
+								{
+									"key": "docCliBloqueado",
+									"value": "98673869379",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4567/api/v1/ListaNegra",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"api",
+								"v1",
+								"ListaNegra"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Login CPF",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "cpf",
+									"value": "98673869379",
+									"type": "text"
+								},
+								{
+									"key": "senha",
+									"value": "12",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4567/api/v1/Login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"api",
+								"v1",
+								"Login"
 							]
 						}
 					},
