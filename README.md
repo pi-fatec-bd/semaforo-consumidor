@@ -85,28 +85,24 @@ R16. Como PJ (pessoa jurídica), o usuário pode se descadastrar no cadastro pos
 #### 3.1.2 Sprint 2
 R07. Como PF (pessoa física), o usuário pode bloquear a visualização dos seus dados (com exceção do score) para uma empresa específica;
 
-R08. Como PF (pessoa física), o usuário consegue bloquear a visualização dos seus dados (com exceção do score) para todas as empresas;
+R08. Como PF (pessoa física), o usuário consegue bloquear a visualização dos seus dados para todos os usuários;
 
 R17. Como PJ (pessoa jurídica), o usuário pode consultar o score de CPFs de terceiros;
 
-R18. Como PJ (pessoa jurídica), o usuário pode consultar o dados (endereço, informações de contato, situação do CPF na receita, dívidas e pagamentos realizados) de CPFs de terceiros se eles estiverem desbloqueados;
+R18. Como PJ (pessoa jurídica), o usuário pode consultar o dados financeiros de CPFs de terceiros se eles estiverem desbloqueados;
 
 R19. Como PJ (pessoa jurídica), o usuário deve entender o que significa o score e como ele é calculado;
 
-R11. Como PF (pessoa física), o usuário pode consultar um gráfico de evolução do seu score por mês;
-
 #### 3.1.3 Sprint 3
-R06. Como PF (pessoa física), o usuário deve ser capaz incluir pagamentos;
+R12. Como PF (pessoa física), o usuário com score médio ou alto pode cadastrar intenção de compra de algum produto ou serviço para receber dicas e descontos sobre o produto;
 
-R12. Como PF (pessoa física), o usuário pode consultar gráficos de pagamentos realizados ( valor /mês e quantidade de pagamentos/mês);
+R13. Como PF (pessoa física), o usuário com score baixo receberá descontos e incentivos para que ele possa empreender e aumentar o seu score;
 
-R13. Como PF (pessoa física), o usuário com score baixo receberá dicas para sair da situação de dívida e indicação de produtos de consultoria financeira;
-
-R14. Como PF (pessoa física), o usuário com score médio/alto receberá dicas de empresas que podem oferecer produtos do interesse dele de acordo com o seu perfil de compras;
+R14. Como PF (pessoa física), o usuário com score médio/alto receberá dicas de empresas que podem oferecer produtos e descontos do interesse dele de acordo com o seu perfil de compras;
 
 R20. Como PF (pessoa física) ou PJ (pessoa jurídica), o usuário pode consultar uma base de dados de perguntas comuns ou base de conhecimento;
 
-R33. Como PF (pessoa física), o usuário pode renegociar suas dívidas que constam no cadastro positivo;
+R33. Como PJ (pessoa jurídica), o usuário pode cadastrar oportunidades de incentivo ao empreendedorismo.
 
 ### 3.2. Requisitos não Funcionais
 R21. Linguagem programação (Stack) Java - Requisito Fatec;
