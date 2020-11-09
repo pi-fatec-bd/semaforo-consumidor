@@ -1,12 +1,10 @@
-# Cadastro Mais
+# Semaforo do Consumidor
 
 ## 1. Apresentação do Projeto
+O Semáforo do Consumidor tem como objetivo premiar os consumidores brasileiros com saúde financeira. Com as informações do cadastro positivo podemos avaliar o histórico de pagamentos, recompensar com descontos exclusivos, cashback, crédito, etc aqueles que tem o semáforo verde e auxiliar quem está no amarelo ou vermelho com um dicas, consultorias e cursos personalizados através do diagnóstico do seu cadastro.
 
 ### 1.1 Visão do Projeto
-O sistema do Cadastro Mais vem para solucionar o problema de crédito,
-tanto para tomadores quanto para os provedores!
-Nossa AI analisa o hábito de consumo e sugere, baseado em uma pontuação de 0 a 999, a possibilidade de conceder crédito!
-O Cadastro Mais ao contrário de outros sistemas, trabalha tanto para reduzir a inadimplência, dando mais segurança para quem vende com nosso sistema de score; tanto para aumentar o consumo e empoderar o consumidor com nossos programas de recuperação de crédito e incentivos ao consumo consciente.
+A entrega de valor do Semáforo do Consumidor é realizar parcerias com empresas que desejam prospectar bons consumidores de seus produtos de acordo com as preferências e objetivos dos usuários. Assim, aumentando as vendas de nossos parceiros e recompensando os usuários com saúde financeira.
 
 ### 1.2. Apresentação da Evolução do Projeto
 
@@ -16,13 +14,13 @@ Sprint 0  | Sprint 1 | Sprint 2 | Sprint 3
 
 ### 1.3. Plano de Negócios
 
-* [Plano de Negócios](https://github.com/pi-fatec-bd/cadastro-mais/wiki/PLANO-DE-NEG%C3%93CIOS---CADASTRO-MAIS)
+* [Plano de Negócios](https://github.com/pi-fatec-bd/semaforo-consumidor/wiki/PLANO-DE-NEG%C3%93CIOS----SEM%C3%81FORO-DO-CONSUMIDOR)
 
 ### 1.4. Wiki do Projeto
 
 Na Wiki do projeto você pode conferir mais detalhes do projeto como as Personas, o Setup, regras para criação de APIs e muitos outros detalhes da documentação.
 
-* [Wiki Cadastro Mais](https://github.com/pi-fatec-bd/cadastro-mais/wiki)
+* [Wiki Semáforo do consumidor](https://github.com/pi-fatec-bd/semaforo-consumidor/wiki)
 
 ### 1.5. Equipe
 
@@ -64,23 +62,23 @@ Banco de dados
 ### 3.1. Requisitos Funcionais (Story Cards)
 
 #### 3.1.1 Sprint 1
-R01. Como PF (pessoa física), o usuário pode se cadastrar no Cadastro Mais através da tela de cadastro;
+R01. Como PF (pessoa física), o usuário pode se cadastrar no Semáforo do Consumidor através da tela de cadastro;
 
-R02. Como PF (pessoa física), o usuário pode se descadastrar no Cadastro Mais;
+R02. Como PF (pessoa física), o usuário pode se descadastrar no Semáforo do Consumidor;
 
 R03. Como PF (pessoa física), o usuário pode consultar seu score;
 
 R04. Como PF (pessoa física), o usuário deve ser capaz de entender seu score;
 
-R05. Como PF (pessoa física), o usuário pode consultar seus dados (endereço, informações de contato, dívidas e pagamentos realizados) no cadastro positivo;
+R05. Como PF (pessoa física), o usuário pode consultar seus dados (endereço, informações de contato, dívidas e pagamentos realizados) no Semáforo do Consumidor;
 
 R09. Como PF (pessoa física), o usuário pode consultar o score de CPFs de terceiros;
 
 R10. Como PF (pessoa física), o usuário pode consultar os dados (endereço, informações de contato, situação do CPF na receita, dívidas e pagamentos realizados) de CPFs de terceiros caso estes estejam disponíveis;
 
-R15. Como PJ (pessoa jurídica), o usuário pode se cadastrar no cadastro positivo;
+R15. Como PJ (pessoa jurídica), o usuário pode se cadastrar no Semáforo do Consumidor;
 
-R16. Como PJ (pessoa jurídica), o usuário pode se descadastrar no cadastro positivo;
+R16. Como PJ (pessoa jurídica), o usuário pode se descadastrar no Semáforo do Consumidor;
 
 #### 3.1.2 Sprint 2
 R07. Como PF (pessoa física), o usuário pode bloquear a visualização dos seus dados (com exceção do score) para uma empresa específica;
