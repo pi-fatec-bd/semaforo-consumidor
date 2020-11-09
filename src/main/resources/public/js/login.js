@@ -8,7 +8,7 @@ $(document).ready(function(){
             senha: $('#senha').val(),
         }
         
-        $.post(loginURL, JSON.stringify(usuarioForm), function(data){
+        $.get(loginURL, usuarioForm, function(data){
                 
             //if user not exists, return to index page
             if(data.doc_cli == 0){
@@ -23,7 +23,7 @@ $(document).ready(function(){
                 window.location.href = '/user.html';            
             }
                       
-        }, "json");
+        });
         
     });
 });
