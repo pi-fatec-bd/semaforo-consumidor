@@ -17,7 +17,7 @@ import static spark.Spark.*;
 
 public class Main {
     public static final String ORACLE_USER = "system";
-    public static final String ORACLE_USER_PASSWORD = "admin";
+    public static final String ORACLE_USER_PASSWORD = "oracle";
     public static final String ORACLE_URL = "jdbc:oracle:thin:@localhost:1521:xe";
 
     private static final String URI_USUARIO_PESSOA_FISICA = "/api/v1/UsuarioPessoaFisica";
@@ -77,7 +77,7 @@ public class Main {
         //ROTA API DADOS PF
         get(URI_DADOS_PF + DOC_CLI, getDadosCPFController.getDadosCPF);
         //ROTA LOGIN
-        get(URI_LOGIN, getCPFLoginController.getCPFLogin);
+        post(URI_LOGIN, getCPFLoginController.getCPFLogin);
 
     }
 }

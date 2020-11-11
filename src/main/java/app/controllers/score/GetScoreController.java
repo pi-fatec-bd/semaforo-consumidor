@@ -6,9 +6,9 @@ import spark.Route;
 
 public class GetScoreController {
     public final Route getScore = (Request request, Response response) -> {
-        //FAKE
+        int score = (int)(Math.random()*2);
+
         response.status(200);
-        response.body("999");
-        return response.body();
+        return score;
     };
 }
