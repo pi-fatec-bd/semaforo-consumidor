@@ -1,16 +1,18 @@
 # Semaforo do Consumidor
 
 ## 1. Apresentação do Projeto
-O Semáforo do Consumidor tem como objetivo premiar os consumidores brasileiros com saúde financeira. Com as informações do cadastro positivo podemos avaliar o histórico de pagamentos, recompensar com descontos exclusivos, cashback, crédito, etc aqueles que tem o semáforo verde e auxiliar quem está no amarelo ou vermelho com um dicas, consultorias e cursos personalizados através do diagnóstico do seu cadastro.
+O Semáforo do Consumidor tem como objetivo premiar os consumidores brasileiros com saúde financeira e incentivar o empreendedorismo como saída para consumidores brasileiros que estão passando por um momento de dificuldade em fazer o pagamento de suas contas em dia. 
+
+Através da análise das informações do cadastro positivo, avaliar o histórico de pagamentos, recompensando com descontos exclusivos, cashback, crédito, etc aqueles que tem o semáforo verde ou amarelo e auxiliar quem está no vermelho com um dicas, cursos personalizados e incentivos para começar o seu negócio através de cursos e descontos em plataformas de marketplace, assim, promovendo o desenvolvimento de negócios locais.
 
 ### 1.1 Visão do Projeto
-A entrega de valor do Semáforo do Consumidor é realizar parcerias com empresas que desejam prospectar bons consumidores de seus produtos de acordo com as preferências e objetivos dos usuários. Assim, aumentando as vendas de nossos parceiros e recompensando os usuários com saúde financeira.
+A entrega de valor do Semáforo do consumidor está em estimular toda a cadeia de consumo de forma consciente, estimulado aqueles que estão com uma situação financeira ruim a conseguir sua independência financeira, para aqueles que estão confortáveis financeiramente incentivos ao consumo com qualidade e com as melhores condições, e para empresas parceiras o direcionamento de consumidores qualificados, aumentando assim o índice de vendas e comissões.
 
 ### 1.2. Apresentação da Evolução do Projeto
 
 Sprint 0  | Sprint 1 | Sprint 2 | Sprint 3  
 --------- |--------- |--------- |--------- |
-[Apresentação 0](https://github.com/pi-fatec-bd/cadastro-mais/blob/master/assets/sprint0.pdf) |[Apresentação 1](https://www.youtube.com/watch?v=7KiylucX0bA&feature=youtu.be) |[indisponível](link) |[indisponível](link) |
+[Apresentação 0](https://github.com/pi-fatec-bd/cadastro-mais/blob/master/assets/sprint0.pdf) |[Apresentação 1](https://www.youtube.com/watch?v=7KiylucX0bA&feature=youtu.be) |[Apresentação 2](https://youtu.be/gPBcxXvGQVM) |[indisponível](link) |
 
 ### 1.3. Plano de Negócios
 
@@ -101,6 +103,8 @@ R14. Como PF (pessoa física), o usuário com score médio/alto receberá dicas 
 R20. Como PF (pessoa física) ou PJ (pessoa jurídica), o usuário pode consultar uma base de dados de perguntas comuns ou base de conhecimento;
 
 R33. Como PJ (pessoa jurídica), o usuário pode cadastrar oportunidades de incentivo ao empreendedorismo.
+
+R34. Com PF (pessoa física), o usuário pode consultar o histórico de pagamentos próprio e de terceiros.
 
 ### 3.2. Requisitos não Funcionais
 R21. Linguagem programação (Stack) Java - Requisito Fatec;
