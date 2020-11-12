@@ -14,6 +14,10 @@ Sprint 0  | Sprint 1 | Sprint 2 | Sprint 3
 --------- |--------- |--------- |--------- |
 [Apresentação 0](https://github.com/pi-fatec-bd/cadastro-mais/blob/master/assets/sprint0.pdf) |[Apresentação 1](https://www.youtube.com/watch?v=7KiylucX0bA&feature=youtu.be) |[Apresentação 2](https://youtu.be/gPBcxXvGQVM) |[indisponível](link) |
 
+#### Burndown da Sprint 2
+
+[Burndown](https://github.com/pi-fatec-bd/semaforo-consumidor/blob/master/assets/burndown.png)
+
 ### 1.3. Plano de Negócios
 
 * [Plano de Negócios](https://github.com/pi-fatec-bd/semaforo-consumidor/wiki/PLANO-DE-NEG%C3%93CIOS----SEM%C3%81FORO-DO-CONSUMIDOR)
