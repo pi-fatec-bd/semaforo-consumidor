@@ -216,7 +216,7 @@ a:focus {
   }
 }
 .hero-area {
-  background: url(../img/hero-area.jpg) no-repeat;
+  background: url(../images/hero-area.jpg) no-repeat;
   background-size: cover;
   background-position: center bottom;
   color: #fff;
@@ -405,7 +405,7 @@ a:focus {
   padding: 22px 64px;
 }
 #why {
-  background: url(../img/why-bg.jpg);
+  background: url(../images/why-bg.jpg);
   background-size: cover;
   color: #fff;
 }

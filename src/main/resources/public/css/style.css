@@ -1,3 +1,7 @@
+main {
+    padding-top: 150px;
+}
+
 .row {
     padding-top: 50px;
 }
@@ -15,26 +19,22 @@
     margin-top: 40px;
 }
 
-footer {
-    background-color:#7300e6;
-    color: white;
-    padding: 20px;
-    margin-top: 20px;
+#login {
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 
-.botao {
-    background-color:#7300e6; 
-    color: white;
-    margin: 20px;
-    padding: 20px 50px 20px 50px;
-    border-radius: 5%;
-
+#cadastroForm {
+    display: grid;
 }
 
-.consultar {
-    font-size: 18px;
+#copyright {
+    margin-top: 30px;
 }
 
-p {
-    font-size: 16px;
+#botao {
+    margin-bottom: 50px;
 }
+
+

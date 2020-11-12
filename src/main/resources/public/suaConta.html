@@ -1,63 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+  <head>  	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <title>Bloqueio de visualização de Dados</title>
-</head>
-<body>
-<nav class="navibar" role="navigation">
-    <div class="nav-wrapper container">
-        <a id="logo-container" href="/tela-principal.html">
-            <strong>CADASTRO MAIS</strong>
-        </a>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Login</a></li>
-        </ul>
 
-        <ul id="nav-mobile" class="sidenav">
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Login</a></li>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/material.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+  
+  </head>
+  <body>
+    <div class="navbar navbar-invers menu-wrap">
+        <div class="navbar-header text-center">
+          <a class="navbar-brand logo-right" href="javascript:void(0)"><span class="material-icons">
+            Semáforo Consumidor</span></i></a>
+        </div>
+        <ul class="nav navbar-nav main-navigation">
+            <li><a href="tela-principal.html">Home</a></li>
+            <li><a href="consultaDadosTerceiros.html">Consultar CPF de Terceiros</a></li>
+            <li><a href="#Logout">Sair</a></li>
         </ul>
-        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div>
-</nav>
-<div class="container">
-    <h1 class="center">Bloqueio de visualização de dados</h1>
-</div>
-<main class="container">
-    <section class="row">
-        <form id="cadastroForm" class="offset-">
-            <div class="row">
-                <div class="input-field col l6 s12">
+        <button class="close-button" id="close-button">Fechar Menu</button>
+    </div>    
+
+    <!-- <Formulário de Login"> -->
+    <header id="home">
+      
+        <div class="container">
+          <div class="col-md-12">
+            <div class="navbar navbar-inverse sticky-navigation navbar-fixed-top" role="navigation" data-spy="affix" data-offset-top="200">
+              <div class="container">
+                <div class="navbar-header">
+                  <a class="logo-left " href="index.html">Semáforo do Consumidor</a>
+                </div>
+                <div class="navbar-right">
+                  <button class="menu-icon"  id="open-button">
+                    <i class="mdi-navigation-menu"></i>
+                  </button>             
+                </div>
+              </div>
+            </div>
+          </div>          
+        </div> 
+    </header>
+    <main class="container">
+        <section class="row">
+            <form id="cadastroForm">
+                <div class="row">
                     <input id="cnpj" type="text" class="validate" data-mask="00000000000000" required>
                     <label for="cnpj">Insira o CNPJ (00000000000000) a ser bloqueado</label>
                 </div>
+                <div class="center">
+                    <button type="submit" id="botao" class="btn btn-primary" name="action">Bloquear</button>
 
-            </div>
+                </div>
+            </form>
+        </section>
+    </main>
+ 
+    <script src="js/materialize.min.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/material.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/jquery.nav.js"></script>      
+    <script src="js/smooth-scroll.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="js/suaConta.js"></script>
 
-
-            <div class="center">
-                <button class="btn waves-effect waves-light" id="criarUsuario" type="submit" name="action">Bloquear
-                    <i class="material-icons right">send</i>
-                </button>
-            </div>
-        </form>
-    </section>
-</main>
-
-<script
-        src="https://code.jquery.com/jquery-3.5.1.min.js"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-        crossorigin="anonymous"
-></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.min.js" ></script>
-<script src="js/materialize.min.js"></script>
-<script src="js/suaConta.js"></script>
-</body>
+    <script>
+        $(document).ready(function() {
+            // This command is used to initialize some elements and make them work properly
+            $.material.init();
+        });
+    </script>
+  </body>
 </html>

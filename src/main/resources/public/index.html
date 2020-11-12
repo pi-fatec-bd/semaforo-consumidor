@@ -1,38 +1,33 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 
   <head>  	
   	<meta charset="utf-8">
-    <meta name="description" content="Responsive Bootstrap Landing Page Template">
-    <meta name="keywords" content="Bootstrap, Landing page, Template, Registration, Landing">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="author" content="Grayrids">
+
 		<title>Semáforo do Consumidor</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="fonts/font-awesome.min.css" type="text/css" media="screen">
-    <!-- Include roboto.css to use the Roboto web font, material.css to include the theme and ripples.css to style the ripple effect -->
     <link href="css/material.min.css" rel="stylesheet">
-    <link href="css/ripples.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
+
   </head>
 
   <body>
 
     <div class="navbar navbar-invers menu-wrap">
       <div class="navbar-header text-center">
-        <a class="navbar-brand logo-right" href="javascript:void(0)"><i class="mdi-image-timelapse"></i>Semáforo</a>
+        <a class="navbar-brand logo-right" href="javascript:void(0)">Semáforo Consumidor</a>
       </div>
         <ul class="nav navbar-nav main-navigation">
-          <li class="active"><a href="#home">Home</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="cadastro.html">Cadastre-se</a></li>
           <li><a href="#features">Novidades</a></li>
           <li><a href="#why">Nós</a></li>
           <!-- <li><a href="#screenshot">Screenshots</a></li> -->
-          <li><a href="#testimonial">O que falam da gente</a></li>
-          <li><a href="#clients">Contato</a></li>
         </ul>
         <button class="close-button" id="close-button">Fechar Menu</button>
     </div>
@@ -46,7 +41,7 @@
             <div class="navbar navbar-inverse sticky-navigation navbar-fixed-top" role="navigation" data-spy="affix" data-offset-top="200">
               <div class="container">
                 <div class="navbar-header">
-                  <a class="logo-left " href="index.html"><i class="mdi-image-timelapse"></i>Semáforo do Consumidor</a>
+                  <a class="logo-left " href="index.html"><i class="mdi-maps-traffic"></i>Semáforo do Consumidor</a>
                 </div>
                 <div class="navbar-right">
                   <button class="menu-icon"  id="open-button">
@@ -59,17 +54,13 @@
         <div class="contents text-right">
           <h1 class="wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">Semáforo do Consumidor</h1>
           <p class="wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="400ms">Pensado para o seu bem estar financeiro</p>
-          <a href="cadastro.html" class="btn btn-lg btn-primary wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Eu quero</a>
-          <a href="#features" class="btn btn-lg btn-border wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">Me conte mais</a>
+          <a href="login.html" class="btn btn-lg btn-primary wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">Login</a>
+          <a href="cadastro.html" class="btn btn-lg btn-border wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">Cadastre-se</a>
         </div>   
     </header>
 
     <section id="features" class="section">
       <div class="container">
-        <!-- <div class="section-header">
-          <h1 class="section-title wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="100ms">App Features</h1>
-          <h2 class="section-subtitle wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="400ms">Who seeks after it and wants to have it</h2>
-        </div> -->
         <div class="row">
 
           <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
@@ -169,7 +160,7 @@
 
           <div class="col-md-6 col-sm-6 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
             <br><br><br><br>
-            <img src="img/features/spc.png" alt="">
+            <img src="images/spc.png" alt="">
           </div>
 
           <div class="col-md-6 col-sm-6 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
@@ -181,13 +172,6 @@
                 Mas; uma coisa é certa; essas mudanças são permanentes e temos que nos adaptarmos!<br>
                 E é justamente sobre adaptação que queremos falar com você!
               </p>
-              <!-- <ul class="list-item">
-                <li><i class="mdi-action-done"></i>Consumo consciente</li>
-                <li><i class="mdi-action-done"></i>Especialista a sua disposição</li>
-                <li><i class="mdi-action-done"></i>Totalmente gratis</li>
-                <li><i class="mdi-action-done"></i>Parcerias exclusivas</li>
-                <li><i class="mdi-action-done"></i>Descontos! Muitos descontos</li>
-              </ul> -->
               <a href="javascript:void(0)" class="btn btn-lg btn-primary">Cadastre-se</a>
             </div>
           </div>
@@ -195,465 +179,12 @@
       </div>
     </section>
 
-     <section id="main-features" class="section main-feature-gray">
-      <div class="container">
-
-        <div class="row">   
-          <div class="col-md-8 col-sm-8 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <div class="feature-item">
-              <h3 class="title-small">
-                O Vermelho – O sinal de perigo!
-              </h3>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum has been the industry's 
-                standard dummy text, when an unknown printer took a galley of type and scrambled it to 
-                make a type specimen book. It has survived not only five centuries, but also the leap into electronicstandard 
-                dummy text ever since the1500s, when an unknown printer took a galley of type and scrambled it to 
-                make a type specimen book. It has survived not only five centuries, but also the leap into electronic
-              </p>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
-              </p>
-            </div>
-          </div>
-          
-          <div class="col-md-4 col-sm-4 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <img src="img/features/vermelho.jpg" class="img-responsive" alt="">
-          </div>  
-
-        </div>
-
-      </div>
-    </section>
-
-     <section id="main-features" class="section">
-      <div class="container">
-
-
-        <div class="row">   
-          <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <img src="img/features/amarelo.jpg" class="img-responsive" alt="">
-          </div>    
-
-          <div class="col-md-8 col-sm-8 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <div class="feature-item">
-              <h3 class="title-small">
-                O Amarelo – Esse é o sinal de Atenção!
-              </h3>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum has been the industry's 
-                standard dummy text ever since the1500s, when an unknown printer took a galley of type and scrambled it to 
-                make a type specimen book. It has survived not only five centuries, but also the leap into electronicstandard 
-                dummy text ever since the1500s, when an unknown printer took a galley of type and scrambled it to 
-                make a type specimen book. It has survived not only five centuries, but also the leap into electronic
-              </p>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
-              </p>
-            </div>
-          </div>
-          
-        </div>
-
-      </div>
-    </section>
-
-     <section id="main-features" class="section main-feature-gray">
-      <div class="container">
-
-        <div class="row">   
-          <div class="col-md-8 col-sm-8 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <div class="feature-item">
-              <h3 class="title-small">
-                O Verde – Parabéns! Estamos com uma saúde financeira excelente!
-              </h3>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum has been the industry's 
-                standard dummy text, when an unknown printer took a galley of type and scrambled it to 
-                make a type specimen book. It has survived not only five centuries, but also the leap into electronicstandard 
-                dummy text ever since the1500s, when an unknown printer took a galley of type and scrambled it to 
-                make a type specimen book. It has survived not only five centuries, but also the leap into electronic
-              </p>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
-              </p>
-            </div>
-          </div>
-          
-          <div class="col-md-4 col-sm-4 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <img src="img/features/verde.jpg" class="img-responsive" alt="">
-          </div>  
-
-        </div>
-
-      </div>
-    </section>
-
-    <section id="cta">
-      <div class="container">
-        <div class="row text-center">         
-            <h3 class="title-small wow bounce" data-wow-duration="1000ms" data-wow-delay="300ms">Cadastre-se, podemos de ajudar de muitas maneiras...</h3>
-             <a href="javascript:void(0)" class="btn btn-lg btn-border">Eu quero</a>
-          </div>
-      </div>
-    </section>
-
-    <!-- <section id="screenshot" class="section">
-      <div class="container">
-        <div class="section-header">
-          <h1 class="section-title wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">Portfolio</h1>
-          <h2 class="section-subtitle wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="400ms">Material UI Bootstrap APP and Business Template</h2>
-            <div class="text-center">
-                <h3><a rel="nofollow" href="https://rebrand.ly/gg-pluto-purchase">You are Using Free Version, Purchase Full Version to Get All Elements/Pages</a></h3>
-                <a rel="nofollow" href="https://rebrand.ly/gg-pluto-purchase" class="btn btn-larg btn-primary">Purchase Now</a>
-            </div>
-        </div>
-      </div>
-
-    </section> -->
-
-
-    <!-- <section id="other-features">
-      <div class="container">
-        <div class="section-header">
-          <h1 class="section-title wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="300ms">Other Features</h1>
-          <h2 class="section-subtitle wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="400ms">Who seeks after it and wants to have it</h2>
-        </div> 
-        <div class="row">
-          <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
-            <div class="features-content">
-              <div class="icon hi-icon-effect-3b">
-                <i class="mdi-action-settings"></i>
-              </div>
-              <h3>Customization</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms">
-            <div class="features-content">
-              <div class="icon">
-                <i class="mdi-action-lock-outline"></i>
-              </div>
-              <h3>Security</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="800ms">
-            <div class="features-content">
-              <div class="icon">
-                <i class="mdi-file-cloud-queue"></i>
-              </div>
-              <h3>Cloud</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="1000ms">
-            <div class="features-content">
-              <div class="icon">
-                <i class="mdi-social-person-outline"></i>
-              </div>
-              <h3>Analtyics</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="1200ms">
-            <div class="features-content">
-              <div class="icon">
-                <i class="mdi-action-grade"></i>
-              </div>
-              <h3>Performance</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="1400ms">
-            <div class="features-content">
-              <div class="icon">
-                <i class="mdi-content-flag"></i>
-              </div>
-              <h3>Network</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="1600ms">
-            <div class="features-content">
-              <div class="icon">
-                <i class="mdi-communication-messenger"></i>
-              </div>
-              <h3>Support</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="1800ms">
-            <div class="features-content">
-              <div class="icon">
-                <i class="mdi-action-settings-power"></i>
-              </div>
-              <h3>Easy</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-
-    <section id="testimonial" class="section">
-      <div class="container">
-        <div class="section-header text-center wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="400ms">
-          <h1 class="section-title">O que as pessoas dizem</h1>
-          <h2 class="section-subtitle">Confira alguns comentarios de nossas redes sociais...</h2>
-        </div>
-        <div class="row">
-          <div class="col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
-            <div id="testimonial-carousel" class="carousel slide" data-ride="carousel">
-              <!-- Indicators -->
-              <ol class="carousel-indicators">
-                <li data-target="#testimonial-carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#testimonial-carousel" data-slide-to="1"></li>
-                <li data-target="#testimonial-carousel" data-slide-to="2"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="item active text-center">               
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-                  <div class="meta">
-                    <p>Tony Stark</p>
-                  </div>
-                </div>
-                <div class="item text-center">                
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-                  <div class="meta">
-                    <p>Thanos - O tirano</p>
-                  </div>
-                </div>
-                <div class="item text-center">                
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-                  <div class="meta">
-                    <p>Peter Parker</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section id="counter" class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <div class="counter-item">
-              <div class="icon">
-                <i class="mdi-navigation-check"></i>
-              </div>
-              <h3 class="timer">39000</h3>
-              <hr>
-              <h5>
-                Acessos
-              </h5>          
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
-            <div class="counter-item">
-              <div class="icon">
-                <i class="mdi-action-face-unlock"></i>
-              </div>
-              <h3 class="timer">105046</h3>
-              <hr>
-              <h5>
-                Cadastros
-              </h5>          
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="700ms">
-            <div class="counter-item">
-              <div class="icon">
-                <i class="mdi-action-grade"></i>
-              </div>
-              <h3 class="timer">6345</h3>
-              <hr>
-              <h5>
-                Renegociações
-              </h5>          
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="900ms">
-            <div class="counter-item">
-              <div class="icon">
-                <i class="mdi-action-trending-up"></i>
-              </div>
-              <h3 class="timer">18325</h3>
-              <hr>
-              <h5>
-                Créditos recuperados
-              </h5>          
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section id="clients" class="section">
-      <div class="container">
-        
-        <div class="section-header text-center">
-          <h1 class="section-title wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">Empresas que acreditam na gente</h1>
-          <h2 class="section-subtitle wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">nossos mais recentes parceiros</h2>
-        </div>
-        <div class="row">
-          <div class="col-md-3 col-sm-3 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <div class="client-item-wrapper">
-              <img src="img/clients/img1.png" alt="">
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-3 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
-            <div class="client-item-wrapper">
-              <img src="img/clients/img2.png" alt="">
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-3 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="700ms">
-            <div class="client-item-wrapper">
-              <img src="img/clients/img3.png" alt="">
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-3 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="900ms">
-            <div class="client-item-wrapper">
-              <img src="img/clients/img4.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="300ms">
-            <h2 class="section-title">Nós estamos aqui; para te ajudar!</h2>
-            <div class="row">
-              <div class="col-md-6 col-sm-6">
-                <div class="info">
-                  <div class="icon">
-                    <i class="mdi-maps-map"></i>
-                  </div>
-                  <h4>Localização</h4>
-                  <p>São José dos Campos, São Paulo</p>
-                </div>
-              </div>
-              <div class="col-md-6 col-sm-6">
-                <div class="info">
-                  <div class="icon">
-                    <i class="mdi-content-mail"></i>
-                  </div>
-                  <h4>Email</h4>
-                  <p>contato@semaforodoconsumidor.com</p>
-                </div>
-              </div>
-              <div class="clear"></div>
-              <div class="col-md-6 col-sm-6">
-                <div class="info">
-                  <div class="icon">
-                    <i class="mdi-action-settings-phone"></i>
-                  </div>
-                  <h4>Telefone</h4>
-                  <p>12 3456-7890</p>
-                </div>
-              </div>
-              <div class="col-md-6 col-sm-6">
-                <div class="info">
-                  <div class="icon">
-                    <i class="mdi-action-thumb-up"></i>
-                  </div>
-                  <h4>Redes Sociais</h4>
-                  <p>@SemaforoDoConsumidor</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>    
-
-    <div class="map-area">      
-      <div class="map">
-<iframe src="https://goo.gl/maps/nvoQybtBFYVprVXeA" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-       </div>
-    </div>
-
-    <section id="footer">
-      <div class="container">
-        <div class="container">
-          <div class="row">
-            <!-- <!-- <div class="col-md-3 col-sm-6 col-xs-12"> -->
-              <!-- <h3>Products</h3>
-              <ul>
-                <li><a href="http://wingthemes.com/">WingThemes</a>
-                </li>
-                <li><a href="http://graygrids.com/">Graygrids</a>
-                </li>
-                <li><a href="http://wpbean.com/">WPBean</a>
-                </li>
-                <li><a href="http://landingbow.com/">Landingbow</a>
-                </li>
-                <li><a href="http://freebiescircle.com/">FreebiesCicle</a>
-                </li>               
-              </ul>
-            </div> -->
-            <!-- <div class="col-md-3 col-sm-6 col-xs-12">
-              <h3>FAQs</h3>
-              <ul>
-                <li><a href="#">Why choose us?</a>
-                </li>
-                <li><a href="#">Where we are?</a>
-                </li>
-                <li><a href="#">Fees</a>
-                </li>
-                <li><a href="#">Guarantee</a>
-                </li>
-                <li><a href="#">Discount</a>
-                </li>
-              </ul>
-            </div> -->
-            <!-- <div class="col-md-3 col-sm-6 col-xs-12">
-              <h3>About</h3>
-              <ul>
-                <li><a href="#">Career</a>
-                </li>
-                <li><a href="#">Partners</a>
-                </li>
-                <li><a href="#">Team</a>
-                </li>
-                <li><a href="#">Clients</a>
-                </li>
-                <li><a href="#">Contact</a>
-                </li>
-              </ul>
-            </div> -->
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <h3>Nos acompanhe nas redes sociais</h3>
-              <a class="social" href="#" target="_blank"><i class="fa fa-facebook"></i></a>
-              <a class="social" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-              <a class="social" href="#" target="_blank"><i class="fa fa-google-plus"></i></a>
-            </div>
-          </div>
-        </div>  
-      </div>      
-      <!-- Go to Top Link -->
-      <a href="#home" class="btn btn-primary back-to-top">
-      <i class=" mdi-hardware-keyboard-arrow-up"></i>
-      </a>
-    </section> 
-
     <section id="copyright">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <p class="copyright-text">
-             © Semáforo do Consumidor 2020 All right reserved. Designed and Developed by bazeeco 
+             © Semáforo do Consumidor - grupo Comix
             </p>
           </div>
         </div>
@@ -664,15 +195,10 @@
 
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/ripples.min.js"></script>
     <script src="js/material.min.js"></script>
     <script src="js/wow.js"></script>
-    <script src="js/jquery.mmenu.min.all.js"></script> 
-    <script src="js/count-to.js"></script>   
-    <script src="js/jquery.inview.min.js"></script>     
     <script src="js/classie.js"></script>
     <script src="js/jquery.nav.js"></script>      
-    <script src="js/smooth-on-scroll.js"></script>
     <script src="js/smooth-scroll.js"></script>
     <script src="js/main.js"></script>
 
