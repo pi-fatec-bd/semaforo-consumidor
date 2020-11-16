@@ -24,7 +24,7 @@
         <ul class="nav navbar-nav main-navigation">
             <li><a href="tela-principal.html">Home</a></li>
             <li><a href="suaConta.html">Sua Conta</a></li>
-            <li><a href="#Logout">Sair</a></li>
+            <li><a id="Logout" href="#">Sair</a></li>
         </ul>
         <button class="close-button" id="close-button">Fechar Menu</button>
     </div>    
@@ -51,42 +51,27 @@
     </header>
     <main class="container">
         <section class="row">
-          <form class="offset-">
+          <h2>Consultar Dados Terceiros</h2>
+          <form id="consultaCpfForm">
             <div class="row">
-                <div class="input-field col 8 s12">
-                  <div class="input-field col 8 s12">
-                    <label>
-                      <input name="group1" type="radio" checked />
-                      <span>Consulta Simples</span>
-                    </label>
-                  </div>
-                  <div class="input-field col 8 s12">
-                    <label>
-                      <input name="group1" type="radio" />
-                      <span>Consulta Detalhada</span>
-                    </label>
-                  </div>
-                </div>
+              <div class="input-field col 8 s12">
+                <input id="cpf" type="text" class="validate">
+                <label for="cpf">Nº Documento</label>
               </div>
-              <p>
-              <div class="row">
-                <div class="input-field col 8 s12">
-                  <input id="cpf" type="text" class="validate" data-mask="000.000.000-00">
-                  <label for="cpf">CPF (000.000.000-00)</label>
-                </div>
+            </div>
+            <div class="row">
+              <div class="center">
+                <button type="submit" id="botao" class="btn btn-primary" name="action">Consultar</button>
               </div>
-              <div class="row"> 
-                <div class="center">
-                  <button type="submit" id="botao" class="btn btn-primary" name="action">Consultar</button>
-                </div>
-             </form>
+            </div>
+          </form>
         </section>
     </main>
- 
+
+    <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/materialize.min.js"></script>
     <script src="js/login.js"></script>
     <script src="js/consultaCpf.js"></script>
-    <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/material.min.js"></script>
     <script src="js/wow.js"></script>
@@ -94,9 +79,7 @@
     <script src="js/jquery.nav.js"></script>      
     <script src="js/smooth-scroll.js"></script>
     <script src="js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
-    <script src="js/suaConta.js"></script>
-
+    <script src="js/logado.js"></script>
     <script>
         $(document).ready(function() {
             // This command is used to initialize some elements and make them work properly

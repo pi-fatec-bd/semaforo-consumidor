@@ -5,12 +5,12 @@ import lombok.Getter;
 import java.util.Map;
 
 @Getter
-public class GetLoginDTO {
+public class PostLoginDTO {
     private final String doc_cli;
     private final String senha;
 
-    public GetLoginDTO(Map<String, String> params) {
-        this.doc_cli = params.get("cpf");
+    public PostLoginDTO(Map<String, String> params) {
+        this.doc_cli = params.get("doc_cli");
         this.senha = params.get("senha");
     }
 }

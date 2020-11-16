@@ -1,6 +1,5 @@
 $(document).ready(function() {
-    var score = Math.floor(Math.random() * 3)
-    alert(score)
+    var score = sessionStorage.getItem("score");
     if (score == 0) {
         var userScore = document.getElementById("userScore")
         userScore.style.color = "red"
