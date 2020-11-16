@@ -24,7 +24,7 @@
         <ul class="nav navbar-nav main-navigation">
             <li><a href="tela-principal.html">Home</a></li>
             <li><a href="consultaDadosTerceiros.html">Consultar CPF de Terceiros</a></li>
-            <li><a href="#Logout">Sair</a></li>
+            <li><a id="Logout" href="#">Sair</a></li>
         </ul>
         <button class="close-button" id="close-button">Fechar Menu</button>
     </div>    
@@ -53,8 +53,8 @@
         <section class="row">
             <form id="cadastroForm">
                 <div class="row">
-                    <input id="cnpj" type="text" class="validate" data-mask="00000000000000" required>
-                    <label for="cnpj">Insira o CNPJ (00000000000000) a ser bloqueado</label>
+                    <input id="cnpj" type="text" class="validate" required>
+                    <label for="cnpj">Insira o CPF ou CNPJ a ser bloqueado</label>
                 </div>
                 <div class="center">
                     <button type="submit" id="botao" class="btn btn-primary" name="action">Bloquear</button>
@@ -63,10 +63,10 @@
             </form>
         </section>
     </main>
- 
+
+    <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/materialize.min.js"></script>
     <script src="js/login.js"></script>
-    <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/material.min.js"></script>
     <script src="js/wow.js"></script>
@@ -76,7 +76,7 @@
     <script src="js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
     <script src="js/suaConta.js"></script>
-
+    <script src="js/logado.js"></script>
     <script>
         $(document).ready(function() {
             // This command is used to initialize some elements and make them work properly

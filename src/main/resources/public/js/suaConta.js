@@ -1,6 +1,6 @@
 $('#cadastroForm').submit(function() {
     const usuarioForm = {
-        docCliBloqueador: sessionStorage.getItem("cnpj"),
+        docCliBloqueador: sessionStorage.getItem("cpf"),
         docCliBloqueado: $('#cnpj').val()
     }
 

@@ -1,35 +1,32 @@
 $('#loginForm').submit(function(e){    
     e.preventDefault();
-    console.log("qualquer coisa")
     const loginURL = "http://localhost:4567/api/v1/Login"
     const usuarioForm = {
-        cpf: $('#cpf').val(),
+        doc_cli: $('#doc_cli').val(),
         senha: $('#senha').val(),
     }
-    console.log(usuarioForm.cpf)
     $.post(loginURL, usuarioForm, function(data) {
-            console.log(data)   
         //Se o usuário não existir, volte para a tela inicial
-        if(data.cpf == 0){
-
+        const json = JSON.parse(data);
+        if(json.cpf == undefined && json.cnpj == undefined){
             window.location.href = '/index.html';
-        
-        //Se o usuário existir, vá para a tela principal	
+        //Se o usuário existir, vá para a tela principal
         } else {
-        
-            sessionStorage.setItem("cpf", data.cpf);
-
-            window.location.href = '/tela-principal.html';            
+            sessionStorage.setItem("doc_cli", json.cpf);
+            $.get("http://localhost:4567/api/v1/Score/" + json.cpf, function(getscore) {
+                sessionStorage.setItem("score", JSON.parse(getscore));
+            });
+            window.location.href = '/tela-principal.html';
         }
                     
     });
     
 });
 
-
-
-
-
+$('#Logout').click(function() {
+    sessionStorage.clear();
+    window.location.href = '/index.html';
+});
 
 
 

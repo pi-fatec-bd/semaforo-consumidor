@@ -1,6 +1,6 @@
 package app.controllers.login;
 
-import app.models.dtos.login.GetLoginDTO;
+import app.models.dtos.login.PostLoginDTO;
 import app.models.entities.UsuarioPessoaFisica;
 import app.models.repository.UsuarioPessoaFisicaRepository;
 import com.google.gson.Gson;
@@ -11,12 +11,12 @@ import spark.Route;
 import static app.utils.JsonToPOJO.toMap;
 import static org.apache.commons.codec.digest.DigestUtils.md5Hex;
 
-public class GetCPFLoginController {
+public class PostCPFLoginController {
     private static final String MENSAGEM_USUARIO_NA0_ENCONTRADO = "Usuario Não Encontrado";
     UsuarioPessoaFisicaRepository usuarioPessoaFisicaRepository = new UsuarioPessoaFisicaRepository();
 
-    public final Route getCPFLogin = (Request request, Response response) -> {
-        GetLoginDTO loginDTO = new GetLoginDTO(toMap(request));
+    public final Route postCPFLogin = (Request request, Response response) -> {
+        PostLoginDTO loginDTO = new PostLoginDTO(toMap(request));
         UsuarioPessoaFisica usuarioPessoaFisica = usuarioPessoaFisicaRepository.selectUsuarioPessoaFisica(loginDTO.getDoc_cli());
         if(usuarioPessoaFisica.getSenha().equals(md5Hex(loginDTO.getSenha())))
         {
