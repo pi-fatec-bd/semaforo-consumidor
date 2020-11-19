@@ -6,7 +6,7 @@ import org.apache.commons.codec.digest.DigestUtils;
 import java.util.Map;
 
 @Getter
-public class PutUsuarioPessoaFisica {
+public class PutUsuarioPessoaFisicaDTO {
     private final String cpf;
     private final Integer anoNascimento;
     private final String sexo;
@@ -16,7 +16,7 @@ public class PutUsuarioPessoaFisica {
     private final String senhaNova;
     private final String confirmarSenhaNova;
 
-    public PutUsuarioPessoaFisica(Map<String, String> params) {
+    public PutUsuarioPessoaFisicaDTO(Map<String, String> params) {
         this.cpf = params.get("cpf");
         this.anoNascimento = Integer.valueOf(params.get("anoNascimento"));
         this.sexo = params.get("sexo");

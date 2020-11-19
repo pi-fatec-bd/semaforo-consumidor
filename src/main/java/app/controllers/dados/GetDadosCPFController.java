@@ -1,6 +1,6 @@
 package app.controllers.dados;
 
-import app.models.dtos.getdadoscpf.GetDadosCPFResponse;
+import app.models.dtos.getdadoscpf.GetDadosCPFResponseDTO;
 import app.models.dtos.listanegra.ListaNegraDTO;
 import app.models.repository.DadosCPFRepository;
 import app.models.repository.ListaNegraRepository;
@@ -25,7 +25,7 @@ public class GetDadosCPFController {
         try {
             ListaNegraDTO lista = new ListaNegraDTO(request.params(":doc_cli"), request.session().attribute("doc_cli"));
             if(listaNegraRepository.selectListaNegra(lista) == null) {
-                GetDadosCPFResponse getDadosCPFResponse = dadosCPFRepository.getDadosCPFResponse(request.params(":doc_cli"));
+                GetDadosCPFResponseDTO getDadosCPFResponse = dadosCPFRepository.getDadosCPFResponse(request.params(":doc_cli"));
                 response.status(200);
                 Gson gson = new Gson();
                 return gson.toJson(getDadosCPFResponse);

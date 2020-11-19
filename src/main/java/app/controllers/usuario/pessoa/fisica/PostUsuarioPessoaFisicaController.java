@@ -1,6 +1,6 @@
 package app.controllers.usuario.pessoa.fisica;
 
-import app.models.dtos.usuario.pessoa.fisica.PostUsuarioPessoaFisica;
+import app.models.dtos.usuario.pessoa.fisica.PostUsuarioPessoaFisicaDTO;
 import app.models.repository.PessoaFisicaRepository;
 import app.models.repository.UsuarioPessoaFisicaRepository;
 import spark.Request;
@@ -25,7 +25,7 @@ public class PostUsuarioPessoaFisicaController {
 
     public final Route postUsuarioPessoaFisica = (Request request, Response response) -> {
 
-        PostUsuarioPessoaFisica novoCadastro = new PostUsuarioPessoaFisica(toMap(request));
+        PostUsuarioPessoaFisicaDTO novoCadastro = new PostUsuarioPessoaFisicaDTO(toMap(request));
 
         if(!novoCadastro.getSenha().equals(novoCadastro.getConfirmarSenha())) {
             response.status(400);

@@ -4,7 +4,7 @@ import app.models.entities.UsuarioPessoaFisica;
 import lombok.Getter;
 
 @Getter
-public class GetUsuarioPessoaFisica {
+public class GetUsuarioPessoaFisicaDTO {
     private final String cpf;
     private final String sexo;
     private final Integer anoNascimento;
@@ -22,7 +22,7 @@ public class GetUsuarioPessoaFisica {
                 '}';
     }
 
-    public GetUsuarioPessoaFisica(UsuarioPessoaFisica usuarioPessoaFisica) {
+    public GetUsuarioPessoaFisicaDTO(UsuarioPessoaFisica usuarioPessoaFisica) {
         cpf = usuarioPessoaFisica.getCpf();
         sexo = usuarioPessoaFisica.getSexo();
         anoNascimento = usuarioPessoaFisica.getAnoNascimento();

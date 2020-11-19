@@ -1,6 +1,6 @@
 package app.controllers.usuario.pessoa.fisica;
 
-import app.models.dtos.usuario.pessoa.fisica.GetUsuarioPessoaFisica;
+import app.models.dtos.usuario.pessoa.fisica.GetUsuarioPessoaFisicaDTO;
 import app.models.repository.UsuarioPessoaFisicaRepository;
 import spark.Request;
 import spark.Response;
@@ -18,7 +18,7 @@ public class GetUsuarioPessoaFisicaController {
 
     public final Route getUsuarioPessoaFisica = (Request request, Response response) -> {
         try {
-            GetUsuarioPessoaFisica usuarioPessoaFisica = new GetUsuarioPessoaFisica(usuarioPessoaFisicaRepository
+            GetUsuarioPessoaFisicaDTO usuarioPessoaFisica = new GetUsuarioPessoaFisicaDTO(usuarioPessoaFisicaRepository
                     .selectUsuarioPessoaFisica(request.params(":doc_cli")));
             response.status(200);
             response.body(usuarioPessoaFisica.toString());
