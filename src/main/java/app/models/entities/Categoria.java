@@ -5,7 +5,7 @@ import lombok.Getter;
 
 @AllArgsConstructor
 @Getter
-public class Desejo {
-    private final String cpf;
-    private final Integer idCategoria;
+public class Categoria {
+    private final Integer id;
+    private final String descricao;
 }

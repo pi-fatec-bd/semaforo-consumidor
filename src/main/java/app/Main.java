@@ -1,6 +1,7 @@
 package app;
 
 import app.controllers.dados.GetDadosCPFController;
+import app.controllers.desejo.GetDesejosController;
 import app.controllers.listanegra.PostListaNegraController;
 import app.controllers.login.PostCPFLoginController;
 import app.controllers.score.GetScoreController;
@@ -26,6 +27,7 @@ public class Main {
     private static final String URI_DADOS_PF = "/api/v1/DadosPF";
     private static final String URI_LISTA_NEGRA = "/api/v1/ListaNegra";
     private static final String URI_LOGIN = "/api/v1/Login";
+    private static final String URI_DESEJOS = "/api/v1/Desejos";
 
     private static final String DOC_CLI = "/:doc_cli";
 
@@ -55,7 +57,11 @@ public class Main {
         //CONTROLLER LISTA NEGRA
         PostListaNegraController postListaNegraController = new PostListaNegraController();
 
+        //CONTROLLER LOGIN
         PostCPFLoginController postCPFLoginController = new PostCPFLoginController();
+
+        //CONTROLLERS DESEJO
+        GetDesejosController getDesejosController = new GetDesejosController();
 
         // ROTAS
         get("/", (req, res) -> "" );
@@ -78,6 +84,7 @@ public class Main {
         get(URI_DADOS_PF + DOC_CLI, getDadosCPFController.getDadosCPF);
         //ROTA LOGIN
         post(URI_LOGIN, postCPFLoginController.postCPFLogin);
-
+        //ROTAS DESEJOS
+        get(URI_DESEJOS + DOC_CLI, getDesejosController.getDesejos);
     }
 }

@@ -1,6 +1,6 @@
 package app.models.repository;
 
-import app.models.dtos.desejo.DesejoDTO;
+import app.models.dtos.desejo.PostDesejoDTO;
 import app.models.entities.Desejo;
 
 import java.sql.Connection;
@@ -30,12 +30,12 @@ public class DesejoRepository {
         return desejos;
     }
 
-    public void insertDesejos(DesejoDTO desejoDTO) throws SQLException {
+    public void insertDesejos(PostDesejoDTO postDesejoDTO) throws SQLException {
         String insertString = "INSERT INTO DESEJOS (UPF_DOC_CLI, CAT_ID) VALUES(?,?)";
         try (Connection con = getConnection(ORACLE_URL, ORACLE_USER, ORACLE_USER_PASSWORD);
              PreparedStatement insertStatement = con.prepareStatement(insertString)) {
-            for(Integer id: desejoDTO.getIdDesejoList()) {
-                insertStatement.setString(1, desejoDTO.getCpf());
+            for(Integer id: postDesejoDTO.getIdDesejoList()) {
+                insertStatement.setString(1, postDesejoDTO.getCpf());
                 insertStatement.setInt(2, id);
                 insertStatement.executeUpdate();
             }
