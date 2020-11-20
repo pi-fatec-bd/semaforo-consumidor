@@ -34,7 +34,7 @@ public class DesejoRepository {
         String insertString = "INSERT INTO DESEJOS (UPF_DOC_CLI, CAT_ID) VALUES(?,?)";
         try (Connection con = getConnection(ORACLE_URL, ORACLE_USER, ORACLE_USER_PASSWORD);
              PreparedStatement insertStatement = con.prepareStatement(insertString)) {
-            for(Integer id: postDesejoDTO.getIdDesejoList()) {
+            for(Integer id: postDesejoDTO.getIdDesejosList()) {
                 insertStatement.setString(1, postDesejoDTO.getCpf());
                 insertStatement.setInt(2, id);
                 insertStatement.executeUpdate();

@@ -19,7 +19,7 @@ public class PostDesejoDTO {
         this.idDesejosList = Arrays.stream(params.get("idDesejosList")
                 .replace("[", "")
                 .replace("]","")
-                .split(", "))
+                .split(","))
                 .map(Integer::parseInt)
                 .collect(Collectors.toList());
     }
