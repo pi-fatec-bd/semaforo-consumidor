@@ -2,6 +2,7 @@ package app;
 
 import app.controllers.dados.GetDadosCPFController;
 import app.controllers.desejo.GetDesejosController;
+import app.controllers.desejo.PostDesejosController;
 import app.controllers.listanegra.PostListaNegraController;
 import app.controllers.login.PostCPFLoginController;
 import app.controllers.score.GetScoreController;
@@ -62,6 +63,7 @@ public class Main {
 
         //CONTROLLERS DESEJO
         GetDesejosController getDesejosController = new GetDesejosController();
+        PostDesejosController postDesejosController = new PostDesejosController();
 
         // ROTAS
         get("/", (req, res) -> "" );
@@ -86,5 +88,6 @@ public class Main {
         post(URI_LOGIN, postCPFLoginController.postCPFLogin);
         //ROTAS DESEJOS
         get(URI_DESEJOS + DOC_CLI, getDesejosController.getDesejos);
+        post(URI_DESEJOS, postDesejosController.postDesejos);
     }
 }
