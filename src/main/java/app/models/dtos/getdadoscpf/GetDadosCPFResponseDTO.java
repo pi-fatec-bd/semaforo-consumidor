@@ -7,13 +7,13 @@ import java.util.List;
 
 @Builder
 @Getter
-public class GetDadosCPFResponse {
+public class GetDadosCPFResponseDTO {
     private final String cpf;
     private final String sexo;
     private final Integer anoNascimento;
     private final String cidade;
     private final String estado;
-    private final List<GetDadosCPFOperacao> operacoes;
+    private final List<GetDadosCPFOperacaoDTO> operacoes;
 
     @Override
     public String toString() {

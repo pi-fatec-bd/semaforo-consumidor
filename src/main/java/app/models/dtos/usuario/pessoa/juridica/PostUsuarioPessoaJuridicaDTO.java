@@ -7,24 +7,22 @@ import java.util.Map;
 import static org.apache.commons.codec.digest.DigestUtils.md5Hex;
 
 @Getter
-public class PutUsuarioPessoaJuridica {
+public class PostUsuarioPessoaJuridicaDTO {
     private final String cnpj;
     private final String email;
     private final String celular;
     private final String cidade;
     private final String estado;
-    private final String senhaAntiga;
-    private final String senhaNova;
-    private final String confirmarSenhaNova;
+    private final String senha;
+    private final String confirmarSenha;
 
-    public PutUsuarioPessoaJuridica(Map<String, String> params) {
+    public PostUsuarioPessoaJuridicaDTO(Map<String, String> params) {
         this.cnpj = params.get("cnpj");
         this.email = params.get("email");
         this.celular = params.get("celular");
         this.cidade = params.get("cidade");
         this.estado = params.get("estado");
-        this.senhaAntiga = md5Hex(params.get("senhaAntiga"));
-        this.senhaNova = md5Hex(params.get("senhaNova"));
-        this.confirmarSenhaNova = md5Hex(params.get("confirmarSenhaNova"));
+        this.senha = md5Hex(params.get("senha"));
+        this.confirmarSenha = md5Hex(params.get("confirmarSenha"));
     }
 }

@@ -7,7 +7,7 @@ import java.sql.Date;
 import java.util.List;
 
 @Builder
-public class GetDadosCPFOperacao {
+public class GetDadosCPFOperacaoDTO {
     private final Integer id;
     private final String cpf;
     private final Long numeroContrato;
@@ -20,7 +20,7 @@ public class GetDadosCPFOperacao {
     private final BigDecimal valorTotalContratadoParcelado;
     private final BigDecimal valorTotalContratadoConsorcio;
     private final BigDecimal valorSaldoDevedor;
-    private final List<GetDadosCPFMovimento> movimentos;
+    private final List<GetDadosCPFMovimentoDTO> movimentos;
 
     @Override
     public String toString() {

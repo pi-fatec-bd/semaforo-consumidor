@@ -1,6 +1,6 @@
 package app.controllers.usuario.pessoa.juridica;
 
-import app.models.dtos.usuario.pessoa.juridica.PostUsuarioPessoaJuridica;
+import app.models.dtos.usuario.pessoa.juridica.PostUsuarioPessoaJuridicaDTO;
 import app.models.repository.UsuarioPessoaJuridicaRepository;
 import spark.Request;
 import spark.Response;
@@ -22,7 +22,7 @@ public class PostUsuarioPessoaJuridicaController {
     private final UsuarioPessoaJuridicaRepository usuarioPessoaJuridicaRepository = new UsuarioPessoaJuridicaRepository();
 
     public final Route postUsuarioPessoaJuridica = (Request request, Response response) -> {
-        PostUsuarioPessoaJuridica usuarioPessoaJuridica = new PostUsuarioPessoaJuridica(toMap(request));
+        PostUsuarioPessoaJuridicaDTO usuarioPessoaJuridica = new PostUsuarioPessoaJuridicaDTO(toMap(request));
 
         if(!usuarioPessoaJuridica.getSenha().equals(usuarioPessoaJuridica.getConfirmarSenha())) {
             response.status(400);

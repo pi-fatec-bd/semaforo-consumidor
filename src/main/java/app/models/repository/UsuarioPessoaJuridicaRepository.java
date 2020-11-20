@@ -1,7 +1,7 @@
 package app.models.repository;
 
-import app.models.dtos.usuario.pessoa.juridica.PostUsuarioPessoaJuridica;
-import app.models.dtos.usuario.pessoa.juridica.PutUsuarioPessoaJuridica;
+import app.models.dtos.usuario.pessoa.juridica.PostUsuarioPessoaJuridicaDTO;
+import app.models.dtos.usuario.pessoa.juridica.PutUsuarioPessoaJuridicaDTO;
 import app.models.entities.UsuarioPessoaJuridica;
 
 import java.sql.Connection;
@@ -36,7 +36,7 @@ public class UsuarioPessoaJuridicaRepository {
         return usuarioPessoaJuridica;
     }
 
-    public void insertUsuarioPessoaJuridica(PostUsuarioPessoaJuridica novoCadastro) throws SQLException {
+    public void insertUsuarioPessoaJuridica(PostUsuarioPessoaJuridicaDTO novoCadastro) throws SQLException {
         String insertString = "INSERT INTO USUARIO_PESSOA_JURIDICA (UPJ_DOC_CLI, UPJ_EMAIL, UPJ_CELULAR," +
                 " UPJ_NOM_CIDADE, UPJ_DES_ESTADO, UPJ_PJ_SENHA) VALUES(?,?,?,?,?,?)";
         try (Connection con = getConnection(ORACLE_URL, ORACLE_USER, ORACLE_USER_PASSWORD);
@@ -51,7 +51,7 @@ public class UsuarioPessoaJuridicaRepository {
         }
     }
 
-    public void updateUsuarioPessoaJuridica(PutUsuarioPessoaJuridica usuarioPessoaJuridica) throws SQLException {
+    public void updateUsuarioPessoaJuridica(PutUsuarioPessoaJuridicaDTO usuarioPessoaJuridica) throws SQLException {
         String updateString = "UPDATE USUARIO_PESSOA_JURIDICA SET UPJ_DOC_CLI = ?, UPJ_EMAIL = ?, " +
                 "UPJ_CELULAR = ?, UPJ_NOM_CIDADE = ?, UPJ_DES_ESTADO = ?, UPJ_PJ_SENHA = ? " +
                 "WHERE UPJ_DOC_CLI = ?";

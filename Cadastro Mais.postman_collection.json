@@ -444,7 +444,10 @@
 									"value": "98673869379",
 									"type": "text"
 								}
-							]
+							],
+							"options": {
+								"urlencoded": {}
+							}
 						},
 						"url": {
 							"raw": "http://localhost:4567/api/v1/ListaNegra",
@@ -470,11 +473,8 @@
 			"item": [
 				{
 					"name": "Login CPF",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
-						"method": "GET",
+						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "urlencoded",
@@ -503,6 +503,59 @@
 								"v1",
 								"Login"
 							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Desejos",
+			"item": [
+				{
+					"name": "Post Desejos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "cpf",
+									"value": "98673869379",
+									"type": "text"
+								},
+								{
+									"key": "idDesejosList",
+									"value": "[1,3]",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4567/api/v1/Desejos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"api",
+								"v1",
+								"Desejos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Desejos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
 						}
 					},
 					"response": []

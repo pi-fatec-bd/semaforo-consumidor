@@ -1,6 +1,6 @@
 package app.controllers.usuario.pessoa.juridica;
 
-import app.models.dtos.usuario.pessoa.juridica.PutUsuarioPessoaJuridica;
+import app.models.dtos.usuario.pessoa.juridica.PutUsuarioPessoaJuridicaDTO;
 import app.models.repository.UsuarioPessoaJuridicaRepository;
 import spark.Request;
 import spark.Response;
@@ -21,7 +21,7 @@ public class PutUsuarioPessoaJuridicaController {
     UsuarioPessoaJuridicaRepository usuarioPessoaJuridicaRepository = new UsuarioPessoaJuridicaRepository();
 
     public final Route putUsuarioPessoaJuridica = (Request request, Response response) -> {
-        PutUsuarioPessoaJuridica usuarioPessoaJuridica = new PutUsuarioPessoaJuridica(toMap(request));
+        PutUsuarioPessoaJuridicaDTO usuarioPessoaJuridica = new PutUsuarioPessoaJuridicaDTO(toMap(request));
         if(usuarioPessoaJuridicaRepository.selectUsuarioPessoaJuridica(usuarioPessoaJuridica.getCnpj()).getSenha()
                 .equals(usuarioPessoaJuridica.getSenhaAntiga())) {
             try {

@@ -8,7 +8,7 @@ import java.sql.Date;
 import java.util.List;
 
 @Builder
-public class GetDadosCPFMovimento {
+public class GetDadosCPFMovimentoDTO {
     private final Integer id;
     private final String cpf;
     private final Integer idFonte;

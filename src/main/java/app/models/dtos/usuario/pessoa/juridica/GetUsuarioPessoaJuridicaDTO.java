@@ -4,7 +4,7 @@ import app.models.entities.UsuarioPessoaJuridica;
 import lombok.Getter;
 
 @Getter
-public class GetUsuarioPessoaJuridica {
+public class GetUsuarioPessoaJuridicaDTO {
     private final String cnpj;
     private final String email;
     private final String celular;
@@ -22,7 +22,7 @@ public class GetUsuarioPessoaJuridica {
                 '}';
     }
 
-    public GetUsuarioPessoaJuridica(UsuarioPessoaJuridica usuarioPessoaJuridica) {
+    public GetUsuarioPessoaJuridicaDTO(UsuarioPessoaJuridica usuarioPessoaJuridica) {
         this.cnpj = usuarioPessoaJuridica.getCnpj();
         this.email = usuarioPessoaJuridica.getEmail();
         this.celular = usuarioPessoaJuridica.getCelular();
