@@ -5,6 +5,8 @@ import app.controllers.desejo.GetDesejosController;
 import app.controllers.desejo.PostDesejosController;
 import app.controllers.listanegra.PostListaNegraController;
 import app.controllers.login.PostCPFLoginController;
+import app.controllers.produto.GetProdutosController;
+import app.controllers.produto.PostProdutoController;
 import app.controllers.score.GetScoreController;
 import app.controllers.usuario.pessoa.fisica.DeleteUsuarioPessoaFisicaController;
 import app.controllers.usuario.pessoa.fisica.GetUsuarioPessoaFisicaController;
@@ -29,8 +31,10 @@ public class Main {
     private static final String URI_LISTA_NEGRA = "/api/v1/ListaNegra";
     private static final String URI_LOGIN = "/api/v1/Login";
     private static final String URI_DESEJOS = "/api/v1/Desejos";
+    private static final String URI_PRODUTOS = "/api/v1/Produtos";
 
     private static final String DOC_CLI = "/:doc_cli";
+    private static final String ID_CATEGORIA = "/:idCategoria";
 
     public static void main(String[] args) {
         String projectDir = System.getProperty("user.dir");
@@ -65,6 +69,10 @@ public class Main {
         GetDesejosController getDesejosController = new GetDesejosController();
         PostDesejosController postDesejosController = new PostDesejosController();
 
+        //CONTROLLERS PRODUTO
+        GetProdutosController getProdutosController = new GetProdutosController();
+        PostProdutoController postProdutoController = new PostProdutoController();
+
         // ROTAS
         get("/", (req, res) -> "" );
         //ROTAS API USUARIO PESSOA FISICA
@@ -89,5 +97,9 @@ public class Main {
         //ROTAS DESEJOS
         get(URI_DESEJOS + DOC_CLI, getDesejosController.getDesejos);
         post(URI_DESEJOS, postDesejosController.postDesejos);
+        //ROTAS PRODUTOS
+        get(URI_PRODUTOS + "/CNPJ" + DOC_CLI, getProdutosController.getProdutosPorCNPJ);
+        get(URI_PRODUTOS + "/Categoria" + ID_CATEGORIA, getProdutosController.getProdutosPorCategoria);
+        post(URI_PRODUTOS, postProdutoController.postProduto);
     }
 }

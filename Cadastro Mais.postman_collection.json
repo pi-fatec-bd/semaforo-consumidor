@@ -404,7 +404,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:4567/api/v1/DadosPF/66607215875",
+							"raw": "http://localhost:4567/api/v1/DadosPF/98673869379",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -414,7 +414,7 @@
 								"api",
 								"v1",
 								"DadosPF",
-								"66607215875"
+								"98673869379"
 							]
 						}
 					},
@@ -555,7 +555,111 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": ""
+							"raw": "http://localhost:4567/api/v1/Desejos/98673869379",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"api",
+								"v1",
+								"Desejos",
+								"98673869379"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Produtos",
+			"item": [
+				{
+					"name": "Post Produto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "idCategoria",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "cnpj",
+									"value": "12345678901234",
+									"type": "text"
+								},
+								{
+									"key": "url",
+									"value": "http://urlteste.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:4567/api/v1/Produtos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"api",
+								"v1",
+								"Produtos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Produtos Por CNPJ",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4567/api/v1/Produtos/CNPJ/12345678901234",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"api",
+								"v1",
+								"Produtos",
+								"CNPJ",
+								"12345678901234"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Produtos Por Categoria",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4567/api/v1/Produtos/Categoria/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4567",
+							"path": [
+								"api",
+								"v1",
+								"Produtos",
+								"Categoria",
+								"1"
+							]
 						}
 					},
 					"response": []
