@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <title>Dados sobre pagamentos de terceiros - Semáforo do Consumidor</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/material.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+
+</head>
+<body>
+<div class="navbar navbar-invers menu-wrap">
+    <div class="navbar-header text-center">
+        <a class="navbar-brand logo-right" href="javascript:void(0)">Semáforo Consumidor</a>
+    </div>
+    <ul class="nav navbar-nav main-navigation">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+    <button class="close-button" id="close-button">Fechar Menu</button>
+</div>
+<!-- <Formulário de Login"> -->
+<header id="home">
+
+    <div class="container">
+        <div class="col-md-12">
+            <div class="navbar navbar-inverse sticky-navigation navbar-fixed-top" role="navigation" data-spy="affix" data-offset-top="200">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="logo-left " href="index.html"><i class="mdi-maps-traffic"></i>Semáforo do Consumidor</a>
+                    </div>
+                    <div class="navbar-right">
+                        <button class="menu-icon"  id="open-button">
+                            <i class="mdi-navigation-menu"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <section class="row">
+        <div class="container">
+            <h3>Pagamentos do perfil desejado</h3>
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>ID pagamento</th>
+                    <th>CPF</th>
+                    <th>ID fonte</th>
+                    <th>Número contrato</th>
+                    <th>Data vencimento</th>
+                    <th>Data pagamento</th>
+                    <th>Valor pago</th>
+                    <th>Código modalidade</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>Mary</td>
+                    <td>Moe</td>
+                    <td>mary@example.com</td>
+                </tr>
+                <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td>july@example.com</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/login.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/material.min.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/smooth-scroll.js"></script>
+<script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+<script src="js/suaConta.js"></script>
+<script src="js/logado.js"></script>
+<script>
+    $(document).ready(function() {
+        // This command is used to initialize some elements and make them work properly
+        $.material.init();
+    });
+</script>
+</body>
+</html>
