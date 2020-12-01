@@ -1,4 +1,3 @@
-
 jQuery(function($) {
 
 	//Initiat WOW JS

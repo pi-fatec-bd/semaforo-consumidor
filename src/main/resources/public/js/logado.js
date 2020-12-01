@@ -1,6 +1,6 @@
 $(document).ready(function(){
 			
-    var userName = sessionStorage.getItem("cpf");
+    var userName = sessionStorage.getItem("doc_cli");
         
         if(userName == null){
         
@@ -8,4 +8,8 @@ $(document).ready(function(){
         
         }
     
+});
+$('#Logout').click(function() {
+    sessionStorage.clear();
+    window.location.href = '/index.html';
 });
