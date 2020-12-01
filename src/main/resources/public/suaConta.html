@@ -18,7 +18,7 @@
   <body>
     <div class="navbar navbar-invers menu-wrap">
         <div class="navbar-header text-center">
-          <a class="navbar-brand logo-right" href="javascript:void(0)"><span class="material-icons">
+          <a class="navbar-brand logo-right" href="tela-principal.html"><span class="material-icons">
             Semáforo Consumidor</span></i></a>
         </div>
         <ul class="nav navbar-nav main-navigation">
@@ -49,10 +49,11 @@
           </div>          
         </div> 
     </header>
-    <main class="container">
-        <section class="row">
+    <main>
+        <section>
             <form id="cadastroForm">
                 <div class="row">
+                    <h2>Bloquear um CNPJ</h2>
                     <input id="cnpj" type="text" class="validate" required>
                     <label for="cnpj">Insira o CPF ou CNPJ a ser bloqueado</label>
                 </div>
@@ -61,21 +62,56 @@
 
                 </div>
             </form>
+
+            <div class="container">
+                    <h2 class="suaConta">Histórico de pagamentos</h2>
+                    <p class="suaConta">Tabela com os dados referentes ao seu histórico de pagamentos:</p>
+                <table id="tabela" class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th>ID pagamento</th>
+                        <th>CPF</th>
+                        <th>Nº Pgtos Realizados</th>
+                        <th>Quantidade Parcelas</th>
+                        <th>Vencimento Ult.Parcela</th>
+                        <th>Número contrato</th>
+                        <th>Valor Total-Contrato</th>
+                        <th>Código modalidade</th>
+                    </tr>
+                    </thead>
+                    <tbody id="operacoes">
+                    <tr>
+                        <!--Tabela de Operações-->
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
     </main>
+    <section id="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="copyright-text">
+                        © Semáforo do Consumidor - grupo Comix
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
 
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/materialize.min.js"></script>
-    <script src="js/login.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/material.min.js"></script>
     <script src="js/wow.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/jquery.nav.js"></script>      
     <script src="js/smooth-scroll.js"></script>
+    <script src="js/suaConta.js"></script>
     <script src="js/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
-    <script src="js/suaConta.js"></script>
     <script src="js/logado.js"></script>
     <script>
         $(document).ready(function() {

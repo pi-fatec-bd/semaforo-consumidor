@@ -37,4 +37,9 @@ main {
     margin-bottom: 50px;
 }
 
+.suaConta {
+    display: flex;
+    justify-content: center;
+}
+
 

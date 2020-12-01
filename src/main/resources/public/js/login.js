@@ -9,6 +9,7 @@ $('#loginForm').submit(function(e){
         //Se o usuário não existir, volte para a tela inicial
         const json = JSON.parse(data);
         if(json.cpf == undefined && json.cnpj == undefined){
+            alert("Login ou senha inválidos.")
             window.location.href = '/index.html';
         //Se o usuário existir, vá para a tela principal
         } else {
@@ -23,10 +24,10 @@ $('#loginForm').submit(function(e){
     
 });
 
-$('#Logout').click(function() {
-    sessionStorage.clear();
-    window.location.href = '/index.html';
-});
+//$('#Logout').click(function() {
+//    sessionStorage.clear();
+//    window.location.href = '/index.html';
+//});
 
 
 
