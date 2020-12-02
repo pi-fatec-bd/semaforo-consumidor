@@ -16,7 +16,12 @@ Sprint 0  | Sprint 1 | Sprint 2 | Sprint 3
 
 #### Burndown da Sprint 2
 
-[Burndown](https://github.com/pi-fatec-bd/semaforo-consumidor/blob/master/assets/burndown.png)
+[Burndown 2](https://github.com/pi-fatec-bd/semaforo-consumidor/blob/master/assets/burndown.png)
+
+#### Burndown da Sprint 2
+
+[Burndown 3](https://github.com/pi-fatec-bd/semaforo-consumidor/blob/master/assets/burndown-sprint3.PNG)
+
 
 ### 1.3. Plano de Negócios
 
