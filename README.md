@@ -12,7 +12,7 @@ A entrega de valor do Semáforo do consumidor está em estimular toda a cadeia d
 
 Sprint 0  | Sprint 1 | Sprint 2 | Sprint 3  
 --------- |--------- |--------- |--------- |
-[Apresentação 0](https://github.com/pi-fatec-bd/cadastro-mais/blob/master/assets/sprint0.pdf) |[Apresentação 1](https://www.youtube.com/watch?v=7KiylucX0bA&feature=youtu.be) |[Apresentação 2](https://youtu.be/gPBcxXvGQVM) |[indisponível](link) |
+[Apresentação 0](https://github.com/pi-fatec-bd/cadastro-mais/blob/master/assets/sprint0.pdf) |[Apresentação 1](https://www.youtube.com/watch?v=7KiylucX0bA&feature=youtu.be) |[Apresentação 2](https://youtu.be/gPBcxXvGQVM) |[Apresentação 3 - Final](https://www.youtube.com/watch?v=3jhpWyu6b3k&feature=youtu.be&ab_channel=Andr%C3%A9LuizDiasCust%C3%B3dio) |
 
 #### Burndown da Sprint 2
 
