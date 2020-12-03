@@ -207,3 +207,5 @@ Nesta tela o usuário atualiza sua conta, informando dados não obrigatórios, m
 * Dalwesley Ferreira Duarte - [linkedIn](https://www.linkedin.com/in/dalwesley-duarte/)
 
 * Felipe Gustavo Braga - [linkedIn](https://www.linkedin.com/in/felipegbraga/)
+
+* Vinicius Fernandes de Lima - [linkedIn] (https://www.linkedin.com/in/vin%C3%ADcius-fernandes-de-lima-06160b162/)
