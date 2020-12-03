@@ -208,4 +208,4 @@ Nesta tela o usuário atualiza sua conta, informando dados não obrigatórios, m
 
 * Felipe Gustavo Braga - [linkedIn](https://www.linkedin.com/in/felipegbraga/)
 
-* Vinicius Fernandes de Lima - [linkedIn] (https://www.linkedin.com/in/vin%C3%ADcius-fernandes-de-lima-06160b162/)
+* Vinicius Fernandes de Lima - [linkedIn](https://www.linkedin.com/in/vin%C3%ADcius-fernandes-de-lima-06160b162/)
